@@ -1,0 +1,59 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AxeptioSDK
+import Foundation
+import KeychainSwift
+import Kingfisher
+import SafariServices
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(Axeptio) public class AxeptioObjCWrapper : ObjectiveC.NSObject {
+  @objc public static var token: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public static func initialize(clientId: Swift.String, version: Swift.String, completionHandler: @escaping (Swift.Error?) -> Swift.Void)
+  @objc public static func hasUserConsent(forVendor name: Swift.String) -> Swift.Bool
+  @objc public static func getUserConsent(forVendor name: Swift.String) -> Swift.Bool
+  @objc public static func clearUserConsents()
+  @objc public static func setUserConsentToDisagreeWithAll()
+  @discardableResult
+  @objc public static func showConsentController(initialStepIndex: Swift.Int = 0, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (Swift.Error?) -> Swift.Void) -> (() -> Swift.Void)?
+  @objc deinit
+}
+extension URLSession {
+  public typealias CancellationHandler = () -> Swift.Void
+  public typealias ProcessingHandler<Result> = (Foundation.Data, Foundation.URLResponse) throws -> Result
+  public typealias CompletionHandler<Result> = (Result?, Foundation.Data?, Swift.Bool, Swift.Error?) -> Swift.Void
+  @discardableResult
+  public func dataTask<Result>(with request: Foundation.URLRequest, processingHandler: @escaping Foundation.URLSession.ProcessingHandler<Result>, completionHandler: @escaping Foundation.URLSession.CompletionHandler<Result>) -> Foundation.URLSession.CancellationHandler
+  @discardableResult
+  public func jsonTask<Result>(with request: Foundation.URLRequest, dateFormatter: Foundation.DateFormatter? = nil, completionHandler: @escaping (Swift.Int?, Result?, Foundation.Data?, Swift.Bool, Swift.Error?) -> Swift.Void) -> Foundation.URLSession.CancellationHandler where Result : Swift.Decodable
+}
+@_hasMissingDesignatedInitializers final public class Axeptio {
+  public static let shared: AxeptioSDK.Axeptio
+  public enum Error : Swift.Error {
+    case notInitialized
+    case alreadyInitialized
+    case invalidClientId
+    case unknownVersion
+    case networkFailed
+    case apiFailed
+    public static func == (a: AxeptioSDK.Axeptio.Error, b: AxeptioSDK.Axeptio.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  final public var token: Swift.String
+  final public func initialize(clientId: Swift.String, version: Swift.String, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void)
+  final public func getUserConsent(forVendor name: Swift.String) -> Swift.Bool?
+  final public func getVendors() -> [Swift.String]
+  final public func clearUserConsents()
+  final public func setUserConsentToDisagreeWithAll()
+  @discardableResult
+  final public func showConsentController(initialStepIndex: Swift.Int = 0, onlyFirstTime: Swift.Bool = true, in viewController: UIKit.UIViewController, animated: Swift.Bool = true, completionHandler: @escaping (AxeptioSDK.Axeptio.Error?) -> Swift.Void) -> (() -> Swift.Void)?
+  @objc deinit
+}
+extension AxeptioSDK.Axeptio.Error : Swift.Equatable {}
+extension AxeptioSDK.Axeptio.Error : Swift.Hashable {}
