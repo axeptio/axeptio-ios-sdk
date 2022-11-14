@@ -13,6 +13,9 @@ import AxeptioSDK
 
 class ViewController: UIViewController {
     
+    let yourClientId = "6058635aa6a92469bed037b0"
+    let yourVersion = "ga_fb"
+
     //let yourClientId = "your client id"
     //let yourVersion = "your version"
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AxeptioSDK'
-  s.version          = '0.3.4'
+  s.version          = '0.3.5'
   s.summary          = 'Axeptio SDK for presenting cookies consent to the user'
 
 # This description is used to generate tags and improve search results.
