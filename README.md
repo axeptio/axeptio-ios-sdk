@@ -2,7 +2,7 @@
 
 User consent is not limited to the web, but applies to all platforms that collect user data. This includes mobile devices.
 
-# Current Release : AxeptioSDK @0.4.0
+# Current Release : AxeptioSDK @0.4.1
 
 ## Author
 
@@ -19,6 +19,19 @@ Minimum iOS version: **12.x**
 Better with xCode **14.x.x**
 
 ## Improvments
+
+####  **0.4.1**
+- iOS 12
+- xCode 14
+- test app in 0.4.2
+- fixes
+  - on Info layout , switch are no more shown as this is only to tell user which cookies are mandatory
+  - improve touchable items size to provide better accessibility( “touchability”) and a better readability
+  - this stand for texts and icons, and buttons ,
+  - vendrors description an icons
+  - buttons icons
+  - buttons texts can not fit on two lines as on its android counter part sdk
+
 
 ####  **0.4.0**
  - iOS 12
