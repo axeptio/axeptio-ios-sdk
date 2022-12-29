@@ -262,7 +262,42 @@ func getUserConsent(forVendor name: String) -> Bool?
 
 The `setUserConsentToDisagreeWithAll` function sets consent for all vendors to false and saves the preference. This function is useful when using application tracking transparency. If a user refuses the tracking permission request, call this function to have the CMP not displayed and the user's consent saved in the Axeptio consent log.
 
+# TroubleShouting
 
+## your updated your Pod:with pod update
+and your have this warning swhon
+```shell
+[!] The `AxeptioSDKDemoUITests [Release]` target overrides the `ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` build setting defined in `Pods/Target Support Files/Pods-AxeptioSDKDemoUITests/Pods-AxeptioSDKDemoUITests.release.xcconfig'. This can lead to problems with the CocoaPods installation
+    - Use the `$(inherited)` flag, or
+    - Remove the build settings from the target.
+```
+- open xcode 14 the xcworkspace file of your project 
+- then select the pods project in the project inspector 
+  - select "build settings" in the tabs above 
+  - In the filter edit text, enter ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES.
+  - Now you only see this field among the build options as long as the filter is activated.
+  - set the value to YES using the context menu if it is not already there
+  - the field should become YES 
+  - when you deploy it using the triangle sign, both the Release and Debug flavours should be set to YES
+- select your project in the project inspector
+  - in the project list, select your project
+  - in the tab select "build setting", it should already be activated
+  - in the filter output you should always have ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES
+  - the variable is set to No
+  - click to open the context menu on this field
+  - select other
+  - in the empty pop up window enter $(inherited)
+  - the value should become No-$(inherited)
+  - when you deploy it using the triangle sign both release and debug flavours must be set to No-$(inherited)
+- repeat this for all targets in the release and debug versions for both the app and the test targets you may have using Pods
+  - set values to $(inherited)
+  - this time fields must be set to Yes-$(inherited)
+  - when you deploy it using the triangle sign both release and debug flavours must be set to YES-$(inherited)
+
+
+
+
+    
 # References
 
 - CocoaPods
