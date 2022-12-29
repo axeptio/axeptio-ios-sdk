@@ -262,7 +262,7 @@ func getUserConsent(forVendor name: String) -> Bool?
 
 The `setUserConsentToDisagreeWithAll` function sets consent for all vendors to false and saves the preference. This function is useful when using application tracking transparency. If a user refuses the tracking permission request, call this function to have the CMP not displayed and the user's consent saved in the Axeptio consent log.
 
-# TroubleShouting
+# TroubleShooting
 
 ## your updated your Pod:with pod update
 and your have this warning swhon
