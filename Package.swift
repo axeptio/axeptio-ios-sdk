@@ -7,7 +7,7 @@ let package = Package(
 		.iOS(.v12)
 	],
 	products: [
-		.library(name: "AxeptioSDK", targets: ["AxeptioSDK"])
+		.library(name: "AxeptioSDK", targets: ["AxeptioSDKWrapper"])
 	],
 	dependencies: [
 		.package(
@@ -32,7 +32,8 @@ let package = Package(
 				.target(name: "AxeptioSDK"),
 				.product(name: "KeychainSwift", package: "KeychainSwift"),
 				.product(name: "Kingfisher", package: "Kingfisher")
-			]
+			],
+			path: "AxeptioSDK"
 		)
 	]
 )
