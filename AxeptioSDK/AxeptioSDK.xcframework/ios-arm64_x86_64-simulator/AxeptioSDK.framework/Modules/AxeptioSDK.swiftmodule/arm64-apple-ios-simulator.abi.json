@@ -1916,1127 +1916,1071 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CircleButton.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CircleButton.swift",
       "kind": "FloatLiteral",
       "offset": 475,
       "length": 3,
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CircleButton.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CircleButton.swift",
       "kind": "FloatLiteral",
       "offset": 487,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1217,
+      "offset": 1228,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1242,
+      "offset": 1253,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1302,
+      "offset": 1313,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6937,
+      "offset": 6815,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 7033,
+      "offset": 6911,
       "length": 8,
       "value": "\"Cookie\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7392,
+      "offset": 7270,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7700,
+      "offset": 7578,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8027,
+      "offset": 7905,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9220,
+      "offset": 8972,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9348,
+      "offset": 9156,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9353,
+      "offset": 9161,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9579,
+      "offset": 9330,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 9660,
+      "offset": 9387,
       "length": 11,
       "value": "\"LeftArrow\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9807,
+      "offset": 9522,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9817,
+      "offset": 9532,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9829,
+      "offset": 9544,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9840,
+      "offset": 9555,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9907,
+      "offset": 9610,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 9917,
+      "offset": 9620,
       "length": 12,
       "value": "0.1753531694"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 9937,
+      "offset": 9640,
       "length": 12,
       "value": "0.1439309716"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9958,
+      "offset": 9661,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 10026,
+      "offset": 9717,
       "length": 9,
       "value": "\"dismiss\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 10274,
+      "offset": 9890,
       "length": 10,
       "value": "\"TopArrow\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10422,
+      "offset": 10026,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10432,
+      "offset": 10036,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10444,
+      "offset": 10048,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10455,
+      "offset": 10059,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 10541,
+      "offset": 10116,
       "length": 12,
       "value": "0.6430723071"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 10562,
+      "offset": 10137,
       "length": 12,
       "value": "0.6431827545"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 10582,
+      "offset": 10157,
       "length": 12,
       "value": "0.6430577636"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10603,
+      "offset": 10178,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 10673,
+      "offset": 10236,
       "length": 11,
       "value": "\"configure\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10845,
+      "offset": 10357,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 10926,
+      "offset": 10414,
       "length": 12,
       "value": "\"RightArrow\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11075,
+      "offset": 10551,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11085,
+      "offset": 10561,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11097,
+      "offset": 10573,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11108,
+      "offset": 10584,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 11176,
+      "offset": 10640,
       "length": 12,
       "value": "0.4954230189"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 11197,
+      "offset": 10661,
       "length": 11,
       "value": "0.746818006"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11216,
+      "offset": 10680,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11226,
+      "offset": 10690,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 11295,
+      "offset": 10747,
       "length": 11,
       "value": "\"acceptAll\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 11567,
+      "offset": 10935,
       "length": 13,
       "value": "\"BottomArrow\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11716,
+      "offset": 11072,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11726,
+      "offset": 11082,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11738,
+      "offset": 11094,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11749,
+      "offset": 11105,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 11816,
+      "offset": 11160,
       "length": 12,
       "value": "0.6430723071"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 11837,
+      "offset": 11181,
       "length": 12,
       "value": "0.6431827545"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 11857,
+      "offset": 11201,
       "length": 12,
       "value": "0.6430577636"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11878,
+      "offset": 11222,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 11946,
+      "offset": 11278,
       "length": 10,
       "value": "\"prevStep\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 12191,
+      "offset": 11448,
       "length": 10,
       "value": "\"TopArrow\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12339,
+      "offset": 11584,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12349,
+      "offset": 11594,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12361,
+      "offset": 11606,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12372,
+      "offset": 11617,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
+      "offset": 11674,
+      "length": 12,
+      "value": "0.6430723071"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "FloatLiteral",
+      "offset": 11695,
+      "length": 12,
+      "value": "0.6431827545"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "FloatLiteral",
+      "offset": 11715,
+      "length": 12,
+      "value": "0.6430577636"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11736,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "StringLiteral",
+      "offset": 11812,
+      "length": 10,
+      "value": "\"lastStep\""
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "StringLiteral",
+      "offset": 11825,
+      "length": 10,
+      "value": "\"nextStep\""
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11914,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "StringLiteral",
+      "offset": 12098,
+      "length": 13,
+      "value": "\"BottomArrow\""
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12235,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12245,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12257,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12268,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "FloatLiteral",
+      "offset": 12323,
+      "length": 12,
+      "value": "0.6430723071"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "FloatLiteral",
+      "offset": 12344,
+      "length": 12,
+      "value": "0.6431827545"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "FloatLiteral",
+      "offset": 12364,
+      "length": 12,
+      "value": "0.6430577636"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12385,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "kind": "StringLiteral",
       "offset": 12441,
-      "length": 12,
-      "value": "0.6430723071"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "FloatLiteral",
-      "offset": 12462,
-      "length": 12,
-      "value": "0.6431827545"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "FloatLiteral",
-      "offset": 12482,
-      "length": 12,
-      "value": "0.6430577636"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12503,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "StringLiteral",
-      "offset": 12591,
-      "length": 10,
-      "value": "\"lastStep\""
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "StringLiteral",
-      "offset": 12604,
-      "length": 10,
-      "value": "\"nextStep\""
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "StringLiteral",
-      "offset": 13052,
-      "length": 13,
-      "value": "\"BottomArrow\""
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13189,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13199,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13211,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13222,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "FloatLiteral",
-      "offset": 13277,
-      "length": 12,
-      "value": "0.6430723071"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "FloatLiteral",
-      "offset": 13298,
-      "length": 12,
-      "value": "0.6431827545"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "FloatLiteral",
-      "offset": 13318,
-      "length": 12,
-      "value": "0.6430577636"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13339,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
-      "kind": "StringLiteral",
-      "offset": 13395,
       "length": 10,
       "value": "\"prevStep\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 13565,
+      "offset": 12611,
       "length": 10,
       "value": "\"TopArrow\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13701,
+      "offset": 12747,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13711,
+      "offset": 12757,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13723,
+      "offset": 12769,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13734,
+      "offset": 12780,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 13791,
+      "offset": 12837,
       "length": 12,
       "value": "0.6430723071"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 13812,
+      "offset": 12858,
       "length": 12,
       "value": "0.6431827545"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "FloatLiteral",
-      "offset": 13832,
+      "offset": 12878,
       "length": 12,
       "value": "0.6430577636"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13853,
+      "offset": 12899,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 13929,
+      "offset": 12975,
       "length": 10,
       "value": "\"lastStep\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 13942,
+      "offset": 12988,
       "length": 10,
       "value": "\"nextStep\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 14150,
+      "offset": 13196,
       "length": 12,
       "value": "\"RightArrow\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14287,
+      "offset": 13333,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14297,
+      "offset": 13343,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14309,
+      "offset": 13355,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14320,
+      "offset": 13366,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "StringLiteral",
-      "offset": 14436,
+      "offset": 13482,
       "length": 11,
       "value": "\"toggleAll\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16333,
+      "offset": 15379,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16337,
+      "offset": 15383,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16269,
+      "offset": 15315,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Extensions\/CodingExtensions.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Extensions\/CodingExtensions.swift",
       "kind": "StringLiteral",
       "offset": 241,
       "length": 5,
       "value": "\"API\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 263,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 297,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 332,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 385,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 735,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
       "kind": "StringLiteral",
-      "offset": 3900,
+      "offset": 3410,
       "length": 7,
       "value": "\"https\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
       "kind": "StringLiteral",
-      "offset": 3930,
+      "offset": 3440,
       "length": 16,
       "value": "\"www.google.com\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
       "kind": "StringLiteral",
-      "offset": 3969,
+      "offset": 3479,
       "length": 14,
       "value": "\"\/s2\/favicons\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
       "kind": "StringLiteral",
-      "offset": 4032,
+      "offset": 3542,
       "length": 8,
       "value": "\"domain\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "StringLiteral",
       "offset": 206,
       "length": 19,
       "value": "\"Axeptio Device ID\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "StringLiteral",
       "offset": 266,
       "length": 18,
       "value": "\"Axeptio Consents\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "StringLiteral",
       "offset": 330,
       "length": 31,
       "value": "\"Axeptio Consents Upload Queue\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
       "offset": 401,
       "length": 3,
       "value": "365"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "Dictionary",
       "offset": 2423,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "Array",
       "offset": 4109,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
       "offset": 9262,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
       "offset": 9333,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "FloatLiteral",
       "offset": 9693,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
       "offset": 11077,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
       "offset": 11116,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "FloatLiteral",
       "offset": 11344,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
       "offset": 11451,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "BooleanLiteral",
       "offset": 11476,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "BooleanLiteral",
       "offset": 11536,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 807,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 835,
-      "length": 5,
-      "value": "\"bri\""
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 807,
-      "length": 5,
-      "value": "\"sat\""
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 835,
-      "length": 5,
-      "value": "\"bri\""
-    },
-    {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
-      "kind": "StringLiteral",
-      "offset": 2676,
+      "offset": 1549,
       "length": 12,
       "value": "\"toggle_off\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2710,
+      "offset": 1583,
       "length": 13,
       "value": "\"button_text\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2756,
+      "offset": 1629,
       "length": 19,
       "value": "\"button_text_hover\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2799,
+      "offset": 1672,
       "length": 15,
       "value": "\"button_border\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2842,
+      "offset": 1715,
       "length": 11,
       "value": "\"button_bg\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2892,
+      "offset": 1765,
       "length": 17,
       "value": "\"button_bg_hover\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2938,
+      "offset": 1811,
       "length": 21,
       "value": "\"primary_button_text\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2999,
+      "offset": 1872,
       "length": 27,
       "value": "\"primary_button_text_hover\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 3061,
+      "offset": 1934,
       "length": 19,
       "value": "\"primary_button_bg\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 3126,
+      "offset": 1999,
       "length": 25,
       "value": "\"primary_button_bg_hover\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 3176,
+      "offset": 2049,
       "length": 16,
       "value": "\"backdrop_inner\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 3217,
+      "offset": 2090,
       "length": 16,
       "value": "\"backdrop_outer\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2676,
+      "offset": 1549,
       "length": 12,
       "value": "\"toggle_off\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2710,
+      "offset": 1583,
       "length": 13,
       "value": "\"button_text\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2756,
+      "offset": 1629,
       "length": 19,
       "value": "\"button_text_hover\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2799,
+      "offset": 1672,
       "length": 15,
       "value": "\"button_border\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2842,
+      "offset": 1715,
       "length": 11,
       "value": "\"button_bg\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2892,
+      "offset": 1765,
       "length": 17,
       "value": "\"button_bg_hover\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2938,
+      "offset": 1811,
       "length": 21,
       "value": "\"primary_button_text\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 2999,
+      "offset": 1872,
       "length": 27,
       "value": "\"primary_button_text_hover\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 3061,
+      "offset": 1934,
       "length": 19,
       "value": "\"primary_button_bg\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 3126,
+      "offset": 1999,
       "length": 25,
       "value": "\"primary_button_bg_hover\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 3176,
+      "offset": 2049,
       "length": 16,
       "value": "\"backdrop_inner\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Model\/Client.swift",
       "kind": "StringLiteral",
-      "offset": 3217,
+      "offset": 2090,
       "length": 16,
       "value": "\"backdrop_outer\""
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "IntegerLiteral",
       "offset": 191,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "IntegerLiteral",
       "offset": 201,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "IntegerLiteral",
       "offset": 223,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "IntegerLiteral",
       "offset": 269,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "FloatLiteral",
       "offset": 308,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "BooleanLiteral",
       "offset": 757,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "IntegerLiteral",
       "offset": 1315,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "Array",
       "offset": 465,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "BooleanLiteral",
       "offset": 1809,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/paul\/WORK\/AXEPTIO\/PUBLISHED\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/DeckView.swift",
       "kind": "BooleanLiteral",
       "offset": 1858,
       "length": 4,

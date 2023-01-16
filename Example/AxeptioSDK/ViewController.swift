@@ -12,8 +12,7 @@ import AxeptioSDK
 
 let axeptioId = "624d5e22e4776e1f019014e2"
 let axeptioVersionFr = "axeptio-prod-fr"
-let axeptioVersionEn: String = "axeptio-prod-en"
-
+let axeptioVersionEn = "axeptio-prod-en"
 
 let demoId: String = "637f77ebb38394b040ab643e"
 let demoVersionEn: String = "test-en"
@@ -21,10 +20,6 @@ let demoVersionfr: String = "test-fr"
 
 let basicId = "6058635aa6a92469bed037b0"
 let basicVersion = "ga_fb"
-
-
-
-
 
 class ViewController: UIViewController {
     

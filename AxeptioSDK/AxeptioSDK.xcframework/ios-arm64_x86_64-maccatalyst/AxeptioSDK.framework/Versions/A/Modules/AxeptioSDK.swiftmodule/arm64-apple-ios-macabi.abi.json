@@ -1840,6 +1840,7 @@
         "objc_name": "NSURLSession",
         "declAttributes": [
           "Available",
+          "Available",
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",

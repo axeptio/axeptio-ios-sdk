@@ -29,16 +29,12 @@
 
 /* Begin PBXFileReference section */
 		02C0602D70601A5E0233460B /* Pods_AxeptioSDK_Example_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxeptioSDK_Example_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1045ADF71828F85E18B7148F /* Pods-AxeptioSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Tests/Pods-AxeptioSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		10A6548B9799287CDD52DF96 /* Pods-AxeptioSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example/Pods-AxeptioSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		14287D5F00D7DDE58E7D190F /* Pods-AxeptioSDK_Example_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_App.debug.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_App/Pods-AxeptioSDK_Example_App.debug.xcconfig"; sourceTree = "<group>"; };
 		3D663C4D36530CC26D0C7A4A /* AxeptioSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AxeptioSDK.podspec; path = ../AxeptioSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* AxeptioSDK_Example_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxeptioSDK_Example_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* AxeptioSDK_Example_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AxeptioSDK_Example_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6EA3080F4543AE21B2B74884 /* Pods-AxeptioSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example/Pods-AxeptioSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		81676EB327682CB10FB44C7D /* Pods-AxeptioSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Tests/Pods-AxeptioSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A8EC89DBA2ADF75C36F6BE65 /* Pods_AxeptioSDK_Example_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AxeptioSDK_Example_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE77199035849753190AD3AA /* Pods-AxeptioSDK_Example_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_Tests/Pods-AxeptioSDK_Example_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEE393A9F1562BB306AF5539 /* Pods-AxeptioSDK_Example_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_Tests.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_Tests/Pods-AxeptioSDK_Example_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,10 +137,6 @@
 		97B693CD9BF608967C390983 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6EA3080F4543AE21B2B74884 /* Pods-AxeptioSDK_Example.debug.xcconfig */,
-				10A6548B9799287CDD52DF96 /* Pods-AxeptioSDK_Example.release.xcconfig */,
-				1045ADF71828F85E18B7148F /* Pods-AxeptioSDK_Tests.debug.xcconfig */,
-				81676EB327682CB10FB44C7D /* Pods-AxeptioSDK_Tests.release.xcconfig */,
 				14287D5F00D7DDE58E7D190F /* Pods-AxeptioSDK_Example_App.debug.xcconfig */,
 				CD3AD4DE282F78C5BEC268E6 /* Pods-AxeptioSDK_Example_App.release.xcconfig */,
 				AE77199035849753190AD3AA /* Pods-AxeptioSDK_Example_Tests.debug.xcconfig */,

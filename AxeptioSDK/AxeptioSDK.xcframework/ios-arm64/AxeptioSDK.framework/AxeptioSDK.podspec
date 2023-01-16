@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AxeptioSDK'
-  s.version          = '0.4.1'
+  s.version          = '0.5'
   s.summary          = 'Axeptio SDK for presenting cookies consent to the user'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  Axeptio SDK for presenting cookies consent to the user using a simple Swift API,  accessible from both Objective C and swift projects
+  Axeptio SDK for presenting cookies consent to the user using a simple Swift API,  accessible from both Objective-C and swift projects
     DESC
 
   s.homepage         = 'https://github.com/axeptio/axeptio-ios-sdk'
