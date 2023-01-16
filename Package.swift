@@ -7,33 +7,12 @@ let package = Package(
 		.iOS(.v12)
 	],
 	products: [
-		.library(name: "AxeptioSDK", targets: ["AxeptioSDKWrapper"])
-	],
-	dependencies: [
-		.package(
-			name: "KeychainSwift",
-			url: "https://github.com/evgenyneu/keychain-swift.git",
-			.upToNextMajor(from: "20.0.0")
-		),
-		.package(
-			name: "Kingfisher",
-			url: "https://github.com/onevcat/Kingfisher.git",
-			.upToNextMajor(from: "7.0.0")
-		)
+		.library(name: "AxeptioSDK", targets: ["AxeptioSDK"])
 	],
 	targets: [
 		.binaryTarget(
 			name: "AxeptioSDK",
 			path: "AxeptioSDK/AxeptioSDK.xcframework"
-		),
-		.target(
-			name: "AxeptioSDKWrapper",
-			dependencies: [
-				.target(name: "AxeptioSDK"),
-				.product(name: "KeychainSwift", package: "KeychainSwift"),
-				.product(name: "Kingfisher", package: "Kingfisher")
-			],
-			path: "AxeptioSDK"
 		)
 	]
 )

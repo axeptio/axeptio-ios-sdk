@@ -40,8 +40,6 @@
 		BEE393A9F1562BB306AF5539 /* Pods-AxeptioSDK_Example_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_Tests.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_Tests/Pods-AxeptioSDK_Example_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C593AD526EC6E6F578C5DFF2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CD3AD4DE282F78C5BEC268E6 /* Pods-AxeptioSDK_Example_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AxeptioSDK_Example_App.release.xcconfig"; path = "Target Support Files/Pods-AxeptioSDK_Example_App/Pods-AxeptioSDK_Example_App.release.xcconfig"; sourceTree = "<group>"; };
-		DAAAF1E928B421A1005091C6 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DAAAF1EA28B421BD005091C6 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		E1327D1E27D62531004F96FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1327D2127D62531004F96FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1327D2327D62531004F96FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
@@ -74,8 +72,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				DAAAF1E928B421A1005091C6 /* Podfile */,
-				DAAAF1EA28B421BD005091C6 /* Podfile.lock */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for AxeptioSDK */,
 				607FACE81AFB9204008FA782 /* Tests */,
