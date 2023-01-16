@@ -557,6 +557,240 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeychainManager",
+        "printedName": "KeychainManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "passwordData",
+            "printedName": "passwordData(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AxeptioSDK15KeychainManagerC12passwordData3key10Foundation0F0VSgSS_tFZ",
+            "mangledName": "$s10AxeptioSDK15KeychainManagerC12passwordData3key10Foundation0F0VSgSS_tFZ",
+            "moduleName": "AxeptioSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "password",
+            "printedName": "password(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AxeptioSDK15KeychainManagerC8password3keySSSgSS_tFZ",
+            "mangledName": "$s10AxeptioSDK15KeychainManagerC8password3keySSSgSS_tFZ",
+            "moduleName": "AxeptioSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPasswordData",
+            "printedName": "setPasswordData(_:key:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[CoreFoundation.CFString : AnyObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CFString",
+                    "printedName": "CoreFoundation.CFString",
+                    "usr": "c:@T@CFStringRef"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AxeptioSDK15KeychainManagerC15setPasswordData_3key7optionsy10Foundation0G0VSg_SSSDySo11CFStringRefayXlGtFZ",
+            "mangledName": "$s10AxeptioSDK15KeychainManagerC15setPasswordData_3key7optionsy10Foundation0G0VSg_SSSDySo11CFStringRefayXlGtFZ",
+            "moduleName": "AxeptioSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPassword",
+            "printedName": "setPassword(_:key:options:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[CoreFoundation.CFString : AnyObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CFString",
+                    "printedName": "CoreFoundation.CFString",
+                    "usr": "c:@T@CFStringRef"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AxeptioSDK15KeychainManagerC11setPassword_3key7optionsySSSg_SSSDySo11CFStringRefayXlGtFZ",
+            "mangledName": "$s10AxeptioSDK15KeychainManagerC11setPassword_3key7optionsySSSg_SSSDySo11CFStringRefayXlGtFZ",
+            "moduleName": "AxeptioSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10AxeptioSDK15KeychainManagerC",
+        "mangledName": "$s10AxeptioSDK15KeychainManagerC",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "AccessControl",
+          "Final"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -624,32 +858,12 @@
       },
       {
         "kind": "Import",
-        "name": "Kingfisher",
-        "printedName": "Kingfisher",
-        "declKind": "Import",
-        "moduleName": "AxeptioSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AxeptioSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KeychainSwift",
-        "printedName": "KeychainSwift",
-        "declKind": "Import",
-        "moduleName": "AxeptioSDK",
-        "declAttributes": [
-          "ImplementationOnly"
         ]
       },
       {
@@ -1957,6 +2171,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Extensions\/KeychainManager.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 17,
+      "value": "\"KeychainManager\""
+    },
+    {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieStepView.swift",
       "kind": "BooleanLiteral",
       "offset": 6815,
@@ -2610,133 +2831,147 @@
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
       "kind": "StringLiteral",
-      "offset": 3431,
+      "offset": 3392,
       "length": 7,
       "value": "\"https\""
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
       "kind": "StringLiteral",
-      "offset": 3461,
+      "offset": 3422,
       "length": 16,
       "value": "\"www.google.com\""
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
       "kind": "StringLiteral",
-      "offset": 3500,
+      "offset": 3461,
       "length": 14,
       "value": "\"\/s2\/favicons\""
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
       "kind": "StringLiteral",
-      "offset": 3563,
+      "offset": 3524,
       "length": 8,
       "value": "\"domain\""
     },
     {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
+      "kind": "StringLiteral",
+      "offset": 3569,
+      "length": 4,
+      "value": "\"sz\""
+    },
+    {
+      "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Views\/CookieVendorView.swift",
+      "kind": "StringLiteral",
+      "offset": 3582,
+      "length": 5,
+      "value": "\"256\""
+    },
+    {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "StringLiteral",
-      "offset": 227,
+      "offset": 185,
       "length": 19,
       "value": "\"Axeptio Device ID\""
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "StringLiteral",
-      "offset": 287,
+      "offset": 245,
       "length": 18,
       "value": "\"Axeptio Consents\""
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "StringLiteral",
-      "offset": 351,
+      "offset": 309,
       "length": 31,
       "value": "\"Axeptio Consents Upload Queue\""
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 422,
+      "offset": 380,
       "length": 3,
       "value": "365"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "Dictionary",
-      "offset": 2444,
+      "offset": 2343,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "Array",
-      "offset": 4130,
+      "offset": 3993,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 9283,
+      "offset": 9110,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 9354,
+      "offset": 9181,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "FloatLiteral",
-      "offset": 9714,
+      "offset": 9541,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 11098,
+      "offset": 10925,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 11137,
+      "offset": 10964,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "FloatLiteral",
-      "offset": 11365,
+      "offset": 11192,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 11472,
+      "offset": 11299,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "BooleanLiteral",
-      "offset": 11497,
+      "offset": 11324,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "BooleanLiteral",
-      "offset": 11557,
+      "offset": 11384,
       "length": 4,
       "value": "true"
     },

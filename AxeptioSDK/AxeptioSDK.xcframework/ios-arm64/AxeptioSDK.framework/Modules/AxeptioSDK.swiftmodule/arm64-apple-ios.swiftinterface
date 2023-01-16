@@ -32,6 +32,13 @@ extension URLSession {
   @discardableResult
   public func jsonTask<Result>(with request: URLRequest, dateFormatter: DateFormatter? = nil, completionHandler: @escaping (Int?, Result?, Data?, Bool, Error?) -> Void) -> CancellationHandler where Result : Swift.Decodable
 }
+@_hasMissingDesignatedInitializers final public class KeychainManager {
+  public static func passwordData(key: String) -> Data?
+  public static func password(key: String) -> String?
+  public static func setPasswordData(_ data: Data?, key: String, options: [CFString : AnyObject] = [kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly])
+  public static func setPassword(_ password: String?, key: String, options: [CFString : AnyObject] = [kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly])
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers final public class Axeptio {
   public static let shared: AxeptioSDK.Axeptio
   public enum Error : Swift.Error {

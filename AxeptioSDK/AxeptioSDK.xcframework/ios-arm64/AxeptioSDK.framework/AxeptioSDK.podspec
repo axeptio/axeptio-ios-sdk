@@ -33,6 +33,4 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'AxeptioSDK/AxeptioSDK.xcframework'
 
   s.frameworks = 'UIKit'
-  s.dependency 'KeychainSwift'
-  s.dependency 'Kingfisher'
 end
