@@ -10,49 +10,27 @@ import UIKit
 import AppTrackingTransparency
 import AxeptioSDK
 
-let axeptioId = "624d5e22e4776e1f019014e2"
-let axeptioVersionFr = "axeptio-prod-fr"
-let axeptioVersionEn = "axeptio-prod-en"
-
-let demoId: String = "637f77ebb38394b040ab643e"
-let demoVersionEn: String = "test-en"
-let demoVersionfr: String = "test-fr"
-
-let basicId = "6058635aa6a92469bed037b0"
-let basicVersion = "ga_fb"
+// Demo
+private let clientId = "637f77ebb38394b040ab643e"
+private let configurationVersion = "test-en"
+//private let configurationVersion = "test-fr"
 
 class ViewController: UIViewController {
-    
-    var yourClientId = demoId
-    var yourVersion = demoVersionEn
-
-    //var yourClientId = "your client id"
-    //var yourVersion = "your version"
-
 	private var dismissHandler: (() -> Void)?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        
-		Axeptio.shared.initialize(clientId: yourClientId, version: yourVersion) { [weak self] error in
+		Axeptio.shared.initialize(clientId: clientId, version: configurationVersion) { [weak self] error in
 			if #available(iOS 14, *) {
-				ATTrackingManager.requestTrackingAuthorization { status in
-					switch status {
-					case .authorized:
-						self?.showCookiesController()
-						
-					case .denied:
-						Axeptio.shared.setUserConsentToDisagreeWithAll()
-					case .notDetermined:
-						self?.showCookiesController()
-					case .restricted:
-						self?.showCookiesController()
-					@unknown default:
-						self?.showCookiesController()
+				ATTrackingManager.requestTrackingAuthorization() { status in
+					DispatchQueue.main.async() {
+						switch status {
+						case .denied: Axeptio.shared.setUserConsentToDisagreeWithAll()
+						default: self?.showCookiesController()
+						}
 					}
 				}
 			} else {
-				// Fallback on earlier versions
 				self?.showCookiesController()
 			}
 		}
@@ -63,31 +41,15 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction private func showCookiesController(_ sender: Any? = nil) {
-		DispatchQueue.main.async {
-			self.dismissHandler?()
-			self.dismissHandler = Axeptio.shared.showConsentController(onlyFirstTime: false, in: self) { error in
-				Axeptio.shared.getVendors().forEach { vendor in
-					let result = Axeptio.shared.getUserConsent(forVendor: vendor)
-                    print("\(vendor) consent is \(String(describing: result))")
+		self.dismissHandler?()
+		self.dismissHandler = Axeptio.shared.showConsentController(onlyFirstTime: sender == nil, in: self) { error in
+			for vendor in Axeptio.shared.getVendors() {
+				if let result = Axeptio.shared.getUserConsent(forVendor: vendor) {
+					print("\(vendor) consent is \(result)")
+				} else {
+					print("\(vendor) consent is not set")
 				}
 			}
 		}
 	}
-    
-    @IBAction func swapIdentifiers(_ sender: Any) {
-        
-        if (yourClientId == axeptioId) {
-            yourClientId = demoId
-            yourVersion = demoVersionEn
-        } else {
-            yourClientId = axeptioId
-            yourVersion = axeptioVersionFr
-        }
-
-        Axeptio.shared.rerere(clientId: yourClientId, version: yourVersion) { [weak self] error in
-            if (error == nil) {
-                self?.showCookiesController()
-            }
-        }
-    }
 }

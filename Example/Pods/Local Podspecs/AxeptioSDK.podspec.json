@@ -1,8 +1,8 @@
 {
   "name": "AxeptioSDK",
-  "version": "0.4.0",
+  "version": "0.5",
   "summary": "Axeptio SDK for presenting cookies consent to the user",
-  "description": "Axeptio SDK for presenting cookies consent to the user using a simple Swift API,  accessible from both Objective C and swift projects",
+  "description": "Axeptio SDK for presenting cookies consent to the user using a simple Swift API,  accessible from both Objective-C and swift projects",
   "homepage": "https://github.com/axeptio/axeptio-ios-sdk",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:axeptio/axeptio-ios-sdk.git",
-    "tag": "0.4.0"
+    "tag": "0.5"
   },
   "swift_versions": "5.0",
   "platforms": {
@@ -22,13 +22,5 @@
   "preserve_paths": "AxeptioSDK/AxeptioSDK.xcframework",
   "vendored_frameworks": "AxeptioSDK/AxeptioSDK.xcframework",
   "frameworks": "UIKit",
-  "dependencies": {
-    "KeychainSwift": [
-
-    ],
-    "Kingfisher": [
-
-    ]
-  },
   "swift_version": "5.0"
 }
