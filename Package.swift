@@ -10,7 +10,7 @@ let package = Package(
 		.library( name: "AxeptioSDK", targets: ["AxeptioSDK"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/evgenyneu/keychain-swift.git", from: "20.0.0")
+		.package(url: "https://github.com/evgenyneu/keychain-swift.git", from: "20.0.0"),
 		.package(url: "https://github.com/onevcat/Kingfisher.git", from: "7.0.0")
 	],
 	targets: [
