@@ -14,13 +14,14 @@ import _StringProcessing
     @objc set
   }
   @objc public static func initialize(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
+  @available(*, deprecated, renamed: "initialize")
+  @objc public static func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
   @objc public static func hasUserConsent(forVendor name: String) -> Bool
   @objc public static func getUserConsent(forVendor name: String) -> Bool
   @objc public static func clearUserConsents()
   @objc public static func setUserConsentToDisagreeWithAll()
   @discardableResult
   @objc public static func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
-  @objc public static func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
   @objc deinit
 }
 extension URLSession {
@@ -43,7 +44,6 @@ extension URLSession {
   public static let shared: AxeptioSDK.Axeptio
   public enum Error : Swift.Error {
     case notInitialized
-    case alreadyInitialized
     case invalidClientId
     case unknownVersion
     case networkFailed
@@ -56,13 +56,14 @@ extension URLSession {
   }
   final public var token: String
   final public func initialize(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
+  @available(*, deprecated, renamed: "initialize")
+  final public func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
   final public func getUserConsent(forVendor name: String) -> Bool?
   final public func getVendors() -> [String]
   final public func clearUserConsents()
   final public func setUserConsentToDisagreeWithAll()
   @discardableResult
   final public func showConsentController(initialStepIndex: Int = 0, onlyFirstTime: Bool = true, in viewController: UIViewController, animated: Bool = true, completionHandler: @escaping (Error?) -> Void) -> (() -> Void)?
-  final public func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
   @objc deinit
 }
 extension AxeptioSDK.Axeptio.Error : Swift.Equatable {}

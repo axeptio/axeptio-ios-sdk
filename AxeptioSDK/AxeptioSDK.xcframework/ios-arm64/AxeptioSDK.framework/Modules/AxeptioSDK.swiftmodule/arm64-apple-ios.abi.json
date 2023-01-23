@@ -191,6 +191,70 @@
           },
           {
             "kind": "Function",
+            "name": "rerere",
+            "printedName": "rerere(clientId:version:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(cm)rerereWithClientId:version:completionHandler:",
+            "mangledName": "$s10AxeptioSDK0A11ObjCWrapperC6rerere8clientId7version17completionHandlerySS_SSys5Error_pSgctFZ",
+            "moduleName": "AxeptioSDK",
+            "static": true,
+            "deprecated": true,
+            "objc_name": "rerereWithClientId:version:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "hasUserConsent",
             "printedName": "hasUserConsent(forVendor:)",
             "children": [
@@ -392,68 +456,6 @@
               "AccessControl",
               "ObjC",
               "DiscardableResult"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "rerere",
-            "printedName": "rerere(clientId:version:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Error?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Error?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(cm)rerereWithClientId:version:completionHandler:",
-            "mangledName": "$s10AxeptioSDK0A11ObjCWrapperC6rerere8clientId7version17completionHandlerySS_SSys5Error_pSgctFZ",
-            "moduleName": "AxeptioSDK",
-            "static": true,
-            "objc_name": "rerereWithClientId:version:completionHandler:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -966,43 +968,6 @@
               },
               {
                 "kind": "Var",
-                "name": "alreadyInitialized",
-                "printedName": "alreadyInitialized",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AxeptioSDK.Axeptio.Error.Type) -> AxeptioSDK.Axeptio.Error",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "AxeptioSDK.Axeptio.Error",
-                        "usr": "s:10AxeptioSDK0A0C5ErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AxeptioSDK.Axeptio.Error.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "AxeptioSDK.Axeptio.Error",
-                            "usr": "s:10AxeptioSDK0A0C5ErrorO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10AxeptioSDK0A0C5ErrorO18alreadyInitializedyA2EmF",
-                "mangledName": "$s10AxeptioSDK0A0C5ErrorO18alreadyInitializedyA2EmF",
-                "moduleName": "AxeptioSDK"
-              },
-              {
-                "kind": "Var",
                 "name": "invalidClientId",
                 "printedName": "invalidClientId",
                 "children": [
@@ -1440,6 +1405,67 @@
           },
           {
             "kind": "Function",
+            "name": "rerere",
+            "printedName": "rerere(clientId:version:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AxeptioSDK.Axeptio.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AxeptioSDK.Axeptio.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "AxeptioSDK.Axeptio.Error",
+                        "usr": "s:10AxeptioSDK0A0C5ErrorO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AxeptioSDK0A0C6rerere8clientId7version17completionHandlerySS_SSyAC5ErrorOSgctF",
+            "mangledName": "$s10AxeptioSDK0A0C6rerere8clientId7version17completionHandlerySS_SSyAC5ErrorOSgctF",
+            "moduleName": "AxeptioSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getUserConsent",
             "printedName": "getUserConsent(forVendor:)",
             "children": [
@@ -1639,65 +1665,6 @@
               "AccessControl",
               "DiscardableResult",
               "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "rerere",
-            "printedName": "rerere(clientId:version:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AxeptioSDK.Axeptio.Error?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AxeptioSDK.Axeptio.Error?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "AxeptioSDK.Axeptio.Error",
-                        "usr": "s:10AxeptioSDK0A0C5ErrorO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10AxeptioSDK0A0C6rerere8clientId7version17completionHandlerySS_SSyAC5ErrorOSgctF",
-            "mangledName": "$s10AxeptioSDK0A0C6rerere8clientId7version17completionHandlerySS_SSyAC5ErrorOSgctF",
-            "moduleName": "AxeptioSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -2152,21 +2119,21 @@
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1228,
+      "offset": 1500,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1253,
+      "offset": 1525,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioObjCWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1313,
+      "offset": 1585,
       "length": 4,
       "value": "true"
     },
@@ -2901,77 +2868,77 @@
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "Dictionary",
-      "offset": 2343,
+      "offset": 2524,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "Array",
-      "offset": 3993,
+      "offset": 4174,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 9110,
+      "offset": 9291,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 9181,
+      "offset": 9362,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "FloatLiteral",
-      "offset": 9541,
+      "offset": 9722,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 10925,
+      "offset": 11106,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 10964,
+      "offset": 11145,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "FloatLiteral",
-      "offset": 11192,
+      "offset": 11373,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 11299,
+      "offset": 11480,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "BooleanLiteral",
-      "offset": 11324,
+      "offset": 11505,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/cyril\/Projets LyricApps\/axeptio-ios-sdk-sources\/AxeptioSDK\/Axeptio.swift",
       "kind": "BooleanLiteral",
-      "offset": 11384,
+      "offset": 11565,
       "length": 4,
       "value": "true"
     },
