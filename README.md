@@ -21,9 +21,9 @@ AxeptioSDK is available under the MIT license. See the LICENSE file for more inf
 
 ### Swift Package Manager
 
-- File > Swift Packages > Add Package Dependency
+- File > Add Packages…
 - Add https://github.com/axeptio/axeptio-ios-sdk.git
-- Select "Up to Next Major" with "0.5.0"
+- Select "Up to Next Major Version" with "0.5.0"
 
 ### CocoaPods
 
@@ -135,20 +135,6 @@ If you need to reset the Axeptio SDK for a different project id for the same cli
 
 ```swift
 func initialize(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
-```
-
-#### rerere (reset)
-
-The `rerere` function resets the SDK by fetching the configuration and calling the completion handler when finished in the same way as `initialize` function described above.
-
-The main difference is that the call to `rerere` first releases everything that has been loaded for the current Client Id and Project Id, then reloads the data for the new Client Id and Project Id. 
-
-Most of the time this should be related to using another version of the project for the same Client Id - both can change.
-
-The name `rerere` comes from the `git rerere` function involved in resolving the same conflicts over and over again until the subject branches are done.
-
-```swift
-func rerere(clientId: String, version: String, completionHandler: @escaping (Error?) -> Void)
 ```
 
 #### showConsentController
