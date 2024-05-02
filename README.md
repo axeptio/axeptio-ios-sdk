@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This SDK is the old Axeptio flavor and is now deprecated. Please go to [axeptio/sample-app-ios](https://github.com/axeptio/sample-app-ios) to discover our brand new TCF compliant SDK with sample apps in Objective C and Swift covering many use cases.
+
 # AxeptioSDK
 
 User consent is not limited to the web, but applies to all platforms that collect user data. This includes mobile devices.
