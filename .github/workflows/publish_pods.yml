@@ -1,0 +1,32 @@
+name: deploy_to_cocoapods 
+
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Cocoapods
+        run: gem install cocoapods
+      - name: Get last pods version
+        id: tag
+        run: |
+          git fetch --tags 
+          VERSION=`git tag | sort -V | tail -1`
+          echo "$VERSION"
+          echo "LAST_VERSION=$VERSION" >> "$GITHUB_OUTPUT"
+      - name: Deploy to Cocoapods
+        env:
+          LIB_VERSION: ${{ steps.tag.outputs.LAST_VERSION }}
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        run: |
+          echo $LIB_VERSION
+          pod lib lint --allow-warnings
+          pod trunk push AxeptioTCFSDK.podspec --allow-warnings
