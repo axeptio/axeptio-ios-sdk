@@ -17,8 +17,8 @@ import _SwiftConcurrencyShims
   @objc final public var axeptioToken: Swift.String? {
     @objc get
   }
-  @objc final public func initialize(clientId: Swift.String, cookiesVersion: Swift.String)
-  @objc final public func initialize(clientId: Swift.String, cookiesVersion: Swift.String, token: Swift.String)
+  @objc final public func initialize(targetService: AxeptioSDK.AxeptioService, clientId: Swift.String, cookiesVersion: Swift.String)
+  @objc final public func initialize(targetService: AxeptioSDK.AxeptioService, clientId: Swift.String, cookiesVersion: Swift.String, token: Swift.String)
   @objc final public func setupUI()
   @objc final public func setUserDeniedTracking()
   @objc final public func appendAxeptioTokenToURL(_ url: Foundation.URL, token: Swift.String) -> Foundation.URL
@@ -36,6 +36,23 @@ import _SwiftConcurrencyShims
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc public enum AxeptioService : Swift.Int {
+  case brands = 1, publisherTcf
+  public func getWebViewUrl() -> Swift.String
+  public var baseURL: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class AxeptioServiceHelper : ObjectiveC.NSObject {
+  @objc public static func fromString(_ string: Swift.String) -> AxeptioSDK.AxeptioService
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc final public class AxeptioEventListener : ObjectiveC.NSObject {
   @objc final public var onPopupClosedEvent: (() -> Swift.Void)?
   @objc final public var onConsentChanged: (() -> Swift.Void)?
@@ -52,5 +69,8 @@ import _SwiftConcurrencyShims
   }
   public init?(rawValue: AxeptioSDK.GoogleConsentStatus.RawValue)
 }
+extension AxeptioSDK.AxeptioService : Swift.Equatable {}
+extension AxeptioSDK.AxeptioService : Swift.Hashable {}
+extension AxeptioSDK.AxeptioService : Swift.RawRepresentable {}
 extension AxeptioSDK.GoogleConsentStatus : Swift.Equatable {}
 extension AxeptioSDK.GoogleConsentStatus : Swift.Hashable {}

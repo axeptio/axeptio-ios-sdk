@@ -29,4 +29,4 @@ jobs:
         run: |
           echo $LIB_VERSION
           pod lib lint --allow-warnings
-          pod trunk push AxeptioTCFSDK.podspec --allow-warnings
+          pod trunk push AxeptioSDK.podspec --allow-warnings

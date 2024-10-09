@@ -299,6 +299,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class NSString;
+enum AxeptioService : NSInteger;
 @class NSURL;
 @class AxeptioEventListener;
 
@@ -308,8 +309,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 + (Axeptio * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, copy) NSString * _Nonnull keyAxeptioTokenQueryItem;
 @property (nonatomic, readonly, copy) NSString * _Nullable axeptioToken;
-- (void)initializeWithClientId:(NSString * _Nonnull)clientId cookiesVersion:(NSString * _Nonnull)cookiesVersion;
-- (void)initializeWithClientId:(NSString * _Nonnull)clientId cookiesVersion:(NSString * _Nonnull)cookiesVersion token:(NSString * _Nonnull)token;
+- (void)initializeWithTargetService:(enum AxeptioService)targetService clientId:(NSString * _Nonnull)clientId cookiesVersion:(NSString * _Nonnull)cookiesVersion;
+- (void)initializeWithTargetService:(enum AxeptioService)targetService clientId:(NSString * _Nonnull)clientId cookiesVersion:(NSString * _Nonnull)cookiesVersion token:(NSString * _Nonnull)token;
 - (void)setupUI;
 - (void)setUserDeniedTracking;
 - (NSURL * _Nonnull)appendAxeptioTokenToURL:(NSURL * _Nonnull)url token:(NSString * _Nonnull)token SWIFT_WARN_UNUSED_RESULT;
@@ -328,6 +329,18 @@ SWIFT_CLASS("_TtC10AxeptioSDK20AxeptioEventListener")
 @property (nonatomic, copy) void (^ _Nullable onPopupClosedEvent)(void);
 @property (nonatomic, copy) void (^ _Nullable onConsentChanged)(void);
 @property (nonatomic, copy) void (^ _Nullable onGoogleConsentModeUpdate)(GoogleConsentV2 * _Nonnull);
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, AxeptioService, open) {
+  AxeptioServiceBrands = 1,
+  AxeptioServicePublisherTcf = 2,
+};
+
+
+SWIFT_CLASS("_TtC10AxeptioSDK20AxeptioServiceHelper")
+@interface AxeptioServiceHelper : NSObject
++ (enum AxeptioService)fromString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
