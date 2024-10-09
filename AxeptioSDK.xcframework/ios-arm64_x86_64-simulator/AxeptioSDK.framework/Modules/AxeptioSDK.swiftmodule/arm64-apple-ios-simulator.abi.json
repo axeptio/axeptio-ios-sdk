@@ -205,12 +205,18 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(clientId:cookiesVersion:)",
+            "printedName": "initialize(targetService:clientId:cookiesVersion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AxeptioService",
+                "printedName": "AxeptioSDK.AxeptioService",
+                "usr": "c:@M@AxeptioSDK@E@AxeptioService"
               },
               {
                 "kind": "TypeNominal",
@@ -226,10 +232,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)initializeWithClientId:cookiesVersion:",
-            "mangledName": "$s10AxeptioSDK0A0C10initialize8clientId14cookiesVersionySS_SStF",
+            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)initializeWithTargetService:clientId:cookiesVersion:",
+            "mangledName": "$s10AxeptioSDK0A0C10initialize13targetService8clientId14cookiesVersionyAA0aE0O_S2StF",
             "moduleName": "AxeptioSDK",
-            "objc_name": "initializeWithClientId:cookiesVersion:",
+            "objc_name": "initializeWithTargetService:clientId:cookiesVersion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -240,12 +246,18 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(clientId:cookiesVersion:token:)",
+            "printedName": "initialize(targetService:clientId:cookiesVersion:token:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AxeptioService",
+                "printedName": "AxeptioSDK.AxeptioService",
+                "usr": "c:@M@AxeptioSDK@E@AxeptioService"
               },
               {
                 "kind": "TypeNominal",
@@ -267,10 +279,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)initializeWithClientId:cookiesVersion:token:",
-            "mangledName": "$s10AxeptioSDK0A0C10initialize8clientId14cookiesVersion5tokenySS_S2StF",
+            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)initializeWithTargetService:clientId:cookiesVersion:token:",
+            "mangledName": "$s10AxeptioSDK0A0C10initialize13targetService8clientId14cookiesVersion5tokenyAA0aE0O_S3StF",
             "moduleName": "AxeptioSDK",
-            "objc_name": "initializeWithClientId:cookiesVersion:token:",
+            "objc_name": "initializeWithTargetService:clientId:cookiesVersion:token:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -1147,6 +1159,422 @@
         "moduleName": "AxeptioSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AxeptioService",
+        "printedName": "AxeptioService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "brands",
+            "printedName": "brands",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AxeptioSDK.AxeptioService.Type) -> AxeptioSDK.AxeptioService",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AxeptioService",
+                    "printedName": "AxeptioSDK.AxeptioService",
+                    "usr": "c:@M@AxeptioSDK@E@AxeptioService"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AxeptioSDK.AxeptioService.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AxeptioService",
+                        "printedName": "AxeptioSDK.AxeptioService",
+                        "usr": "c:@M@AxeptioSDK@E@AxeptioService"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AxeptioSDK@E@AxeptioService@AxeptioServiceBrands",
+            "mangledName": "$s10AxeptioSDK0A7ServiceO6brandsyA2CmF",
+            "moduleName": "AxeptioSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "publisherTcf",
+            "printedName": "publisherTcf",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AxeptioSDK.AxeptioService.Type) -> AxeptioSDK.AxeptioService",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AxeptioService",
+                    "printedName": "AxeptioSDK.AxeptioService",
+                    "usr": "c:@M@AxeptioSDK@E@AxeptioService"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AxeptioSDK.AxeptioService.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AxeptioService",
+                        "printedName": "AxeptioSDK.AxeptioService",
+                        "usr": "c:@M@AxeptioSDK@E@AxeptioService"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AxeptioSDK@E@AxeptioService@AxeptioServicePublisherTcf",
+            "mangledName": "$s10AxeptioSDK0A7ServiceO12publisherTcfyA2CmF",
+            "moduleName": "AxeptioSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Function",
+            "name": "getWebViewUrl",
+            "printedName": "getWebViewUrl()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10AxeptioSDK0A7ServiceO13getWebViewUrlSSyF",
+            "mangledName": "$s10AxeptioSDK0A7ServiceO13getWebViewUrlSSyF",
+            "moduleName": "AxeptioSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10AxeptioSDK0A7ServiceO7baseURLSSvp",
+            "mangledName": "$s10AxeptioSDK0A7ServiceO7baseURLSSvp",
+            "moduleName": "AxeptioSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AxeptioSDK0A7ServiceO7baseURLSSvg",
+                "mangledName": "$s10AxeptioSDK0A7ServiceO7baseURLSSvg",
+                "moduleName": "AxeptioSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AxeptioSDK.AxeptioService?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AxeptioService",
+                    "printedName": "AxeptioSDK.AxeptioService",
+                    "usr": "c:@M@AxeptioSDK@E@AxeptioService"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10AxeptioSDK0A7ServiceO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10AxeptioSDK0A7ServiceO8rawValueACSgSi_tcfc",
+            "moduleName": "AxeptioSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10AxeptioSDK0A7ServiceO8rawValueSivp",
+            "mangledName": "$s10AxeptioSDK0A7ServiceO8rawValueSivp",
+            "moduleName": "AxeptioSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10AxeptioSDK0A7ServiceO8rawValueSivg",
+                "mangledName": "$s10AxeptioSDK0A7ServiceO8rawValueSivg",
+                "moduleName": "AxeptioSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AxeptioSDK@E@AxeptioService",
+        "mangledName": "$s10AxeptioSDK0A7ServiceO",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AxeptioServiceHelper",
+        "printedName": "AxeptioServiceHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fromString",
+            "printedName": "fromString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AxeptioService",
+                "printedName": "AxeptioSDK.AxeptioService",
+                "usr": "c:@M@AxeptioSDK@E@AxeptioService"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioServiceHelper(cm)fromString:",
+            "mangledName": "$s10AxeptioSDK0A13ServiceHelperC10fromStringyAA0aC0OSSFZ",
+            "moduleName": "AxeptioSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AxeptioServiceHelper",
+                "printedName": "AxeptioSDK.AxeptioServiceHelper",
+                "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioServiceHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioServiceHelper(im)init",
+            "mangledName": "$s10AxeptioSDK0A13ServiceHelperCACycfc",
+            "moduleName": "AxeptioSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioServiceHelper",
+        "mangledName": "$s10AxeptioSDK0A13ServiceHelperC",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -2239,840 +2667,959 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 884,
       "length": 15,
       "value": "\"axeptio_token\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "Array",
-      "offset": 946,
+      "offset": 1008,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 1004,
+      "offset": 1066,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 1098,
+      "offset": 1160,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "StringLiteral",
-      "offset": 690,
+      "offset": 752,
       "length": 7,
       "value": "\"AxeptioSDK.Axeptio\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Common\/Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Common\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 198,
       "length": 14,
       "value": "\"io.axept.ios\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Common\/Extensions.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Common\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 224,
       "length": 13,
       "value": "\"AXEPTIO_TAG\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/InAppEventQueueRepository.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/InAppEventQueueRepository.swift",
       "kind": "StringLiteral",
       "offset": 446,
       "length": 20,
       "value": "\"event_cookies_open\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/InAppEventQueueRepository.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/InAppEventQueueRepository.swift",
       "kind": "StringLiteral",
       "offset": 509,
       "length": 22,
       "value": "\"io.axept.event_saved\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 883,
       "length": 19,
       "value": "\"analytics_storage\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 928,
       "length": 12,
       "value": "\"ad_storage\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 967,
       "length": 14,
       "value": "\"ad_user_data\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 1015,
       "length": 20,
       "value": "\"ad_personalization\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 883,
       "length": 19,
       "value": "\"analytics_storage\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 928,
       "length": 12,
       "value": "\"ad_storage\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 967,
       "length": 14,
       "value": "\"ad_user_data\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 1015,
       "length": 20,
       "value": "\"ad_personalization\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentV2.swift",
       "kind": "StringLiteral",
       "offset": 134,
       "length": 15,
       "value": "\"AxeptioSDK.GoogleConsentV2\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/CookiesEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 17,
+      "value": "\"axeptio_cookies\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/CookiesEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 21,
+      "value": "\"axeptio_all_vendors\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/CookiesEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 407,
+      "length": 28,
+      "value": "\"axeptio_authorized_vendors\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/CookiesEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 17,
+      "value": "\"axeptio_cookies\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/CookiesEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 352,
+      "length": 21,
+      "value": "\"axeptio_all_vendors\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/CookiesEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 407,
+      "length": 28,
+      "value": "\"axeptio_authorized_vendors\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/AxeptioService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 175,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/AxeptioService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 178,
+      "length": 12,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/AxeptioService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 175,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/AxeptioService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 178,
+      "length": 12,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1016,
       "length": 17,
       "value": "\"IABTCF_CmpSdkID\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 22,
       "value": "\"IABTCF_CmpSdkVersion\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1115,
       "length": 22,
       "value": "\"IABTCF_PolicyVersion\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1165,
       "length": 20,
       "value": "\"IABTCF_gdprApplies\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1213,
       "length": 20,
       "value": "\"IABTCF_PublisherCC\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1269,
       "length": 28,
       "value": "\"IABTCF_PurposeOneTreatment\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1333,
       "length": 28,
       "value": "\"IABTCF_UseNonStandardTexts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1386,
       "length": 17,
       "value": "\"IABTCF_TCString\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1434,
       "length": 23,
       "value": "\"IABTCF_VendorConsents\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1499,
       "length": 34,
       "value": "\"IABTCF_VendorLegitimateInterests\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1565,
       "length": 24,
       "value": "\"IABTCF_PurposeConsents\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1632,
       "length": 35,
       "value": "\"IABTCF_PurposeLegitimateInterests\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1705,
       "length": 30,
       "value": "\"IABTCF_SpecialFeaturesOptIns\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1773,
       "length": 30,
       "value": "\"IABTCF_PublisherRestrictions\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 25,
       "value": "\"IABTCF_PublisherConsent\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1906,
       "length": 37,
       "value": "\"IABTCF_PublisherLegitimateInterests\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1991,
       "length": 40,
       "value": "\"IABTCF_PublisherCustomPurposesConsents\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 2135,
       "length": 51,
       "value": "\"IABTCF_PublisherCustomPurposesLegitimateInterests\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 2264,
       "length": 21,
       "value": "\"IABTCF_AddtlConsent\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 2329,
       "length": 36,
       "value": "\"IABTCF_EnableAdvertiserConsentMode\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1016,
       "length": 17,
       "value": "\"IABTCF_CmpSdkID\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 22,
       "value": "\"IABTCF_CmpSdkVersion\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1115,
       "length": 22,
       "value": "\"IABTCF_PolicyVersion\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1165,
       "length": 20,
       "value": "\"IABTCF_gdprApplies\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1213,
       "length": 20,
       "value": "\"IABTCF_PublisherCC\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1269,
       "length": 28,
       "value": "\"IABTCF_PurposeOneTreatment\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1333,
       "length": 28,
       "value": "\"IABTCF_UseNonStandardTexts\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1386,
       "length": 17,
       "value": "\"IABTCF_TCString\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1434,
       "length": 23,
       "value": "\"IABTCF_VendorConsents\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1499,
       "length": 34,
       "value": "\"IABTCF_VendorLegitimateInterests\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1565,
       "length": 24,
       "value": "\"IABTCF_PurposeConsents\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1632,
       "length": 35,
       "value": "\"IABTCF_PurposeLegitimateInterests\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1705,
       "length": 30,
       "value": "\"IABTCF_SpecialFeaturesOptIns\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1773,
       "length": 30,
       "value": "\"IABTCF_PublisherRestrictions\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1836,
       "length": 25,
       "value": "\"IABTCF_PublisherConsent\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1906,
       "length": 37,
       "value": "\"IABTCF_PublisherLegitimateInterests\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 1991,
       "length": 40,
       "value": "\"IABTCF_PublisherCustomPurposesConsents\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 2135,
       "length": 51,
       "value": "\"IABTCF_PublisherCustomPurposesLegitimateInterests\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 2264,
       "length": 21,
       "value": "\"IABTCF_AddtlConsent\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 2329,
       "length": 36,
       "value": "\"IABTCF_EnableAdvertiserConsentMode\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/IABTCF.swift",
       "kind": "StringLiteral",
       "offset": 2407,
       "length": 11,
       "value": "\"_ax_token\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Common\/Environment.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Common\/Environment.swift",
       "kind": "StringLiteral",
       "offset": 175,
       "length": 10,
       "value": "\"BASE_URL\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Common\/Environment.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Common\/Environment.swift",
       "kind": "Dictionary",
       "offset": 334,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
       "offset": 488,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
       "offset": 523,
       "length": 4,
       "value": "3000"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
       "offset": 570,
       "length": 5,
       "value": "60000"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/EventQueueRepository.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/EventQueueRepository.swift",
       "kind": "StringLiteral",
       "offset": 373,
       "length": 13,
       "value": "\"event_queue\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/EventQueueRepository.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/EventQueueRepository.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 22,
       "value": "\"io.axept.event_queue\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1074,
+      "offset": 1208,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1353,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1255,
+      "offset": 1389,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1343,
+      "offset": 1477,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1454,
+      "offset": 1588,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2941,
+      "offset": 3231,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
       "offset": 158,
       "length": 15,
       "value": "\"consent:saved\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 31,
       "value": "\"google:consent-mode-v2-update\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "kind": "StringLiteral",
+      "offset": 272,
+      "length": 17,
+      "value": "\"axeptio:cookies\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
       "offset": 158,
       "length": 15,
       "value": "\"consent:saved\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 31,
       "value": "\"google:consent-mode-v2-update\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 272,
+      "length": 17,
+      "value": "\"axeptio:cookies\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
       "length": 15,
       "value": "\"cookies:close\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 363,
+      "offset": 400,
       "length": 14,
       "value": "\"cookies:open\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 410,
+      "offset": 447,
       "length": 24,
       "value": "\"cookies:consent:accept\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 467,
+      "offset": 504,
       "length": 24,
       "value": "\"cookies:consent:reject\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 525,
+      "offset": 562,
       "length": 25,
       "value": "\"cookies:consent:partial\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 623,
       "length": 28,
       "value": "\"cookies:vendors:toggle:off\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 649,
+      "offset": 686,
       "length": 27,
       "value": "\"cookies:vendors:toggle:on\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 715,
+      "offset": 752,
       "length": 31,
       "value": "\"cookies:vendors:toggleall:off\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 821,
       "length": 30,
       "value": "\"ccokies:vendors:toggleall:on\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 835,
+      "offset": 872,
       "length": 10,
       "value": "\"pagehide\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 869,
+      "offset": 906,
       "length": 13,
       "value": "\"pagevisible\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 940,
       "length": 10,
       "value": "\"pageview\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 981,
       "length": 21,
       "value": "\"cookies:step:change\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 361,
       "length": 15,
       "value": "\"cookies:close\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 363,
+      "offset": 400,
       "length": 14,
       "value": "\"cookies:open\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 410,
+      "offset": 447,
       "length": 24,
       "value": "\"cookies:consent:accept\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 467,
+      "offset": 504,
       "length": 24,
       "value": "\"cookies:consent:reject\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 525,
+      "offset": 562,
       "length": 25,
       "value": "\"cookies:consent:partial\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 586,
+      "offset": 623,
       "length": 28,
       "value": "\"cookies:vendors:toggle:off\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 649,
+      "offset": 686,
       "length": 27,
       "value": "\"cookies:vendors:toggle:on\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 715,
+      "offset": 752,
       "length": 31,
       "value": "\"cookies:vendors:toggleall:off\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 821,
       "length": 30,
       "value": "\"ccokies:vendors:toggleall:on\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 835,
+      "offset": 872,
       "length": 10,
       "value": "\"pagehide\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 869,
+      "offset": 906,
       "length": 13,
       "value": "\"pagevisible\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 940,
       "length": 10,
       "value": "\"pageview\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 981,
       "length": 21,
       "value": "\"cookies:step:change\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1014,
+      "offset": 1051,
       "length": 10,
       "value": "\"app:open\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 1082,
       "length": 11,
       "value": "\"app:close\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1121,
       "length": 19,
       "value": "\"app:cookies:ready\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1014,
+      "offset": 1165,
+      "length": 15,
+      "value": "\"cookies:close\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "kind": "StringLiteral",
+      "offset": 1051,
       "length": 10,
       "value": "\"app:open\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 1082,
       "length": 11,
       "value": "\"app:close\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1121,
       "length": 19,
       "value": "\"app:cookies:ready\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "kind": "StringLiteral",
+      "offset": 1165,
+      "length": 15,
+      "value": "\"cookies:close\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 375,
       "length": 12,
       "value": "\"axeptioSdk\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 563,
       "length": 14,
       "value": "\"_ax_tcstring\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 609,
       "length": 18,
       "value": "\"_ax_app_sdk_mode\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 661,
       "length": 20,
       "value": "\"_ax_app_att_denied\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 15,
       "value": "\"_ax_client_id\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 762,
       "length": 21,
       "value": "\"_ax_cookies_version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 833,
+      "offset": 823,
+      "length": 10,
+      "value": "\"clientId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "kind": "StringLiteral",
+      "offset": 878,
+      "length": 16,
+      "value": "\"cookiesVersion\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "kind": "StringLiteral",
+      "offset": 930,
+      "length": 15,
+      "value": "\"axeptio_token\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "kind": "StringLiteral",
+      "offset": 994,
       "length": 20,
       "value": "\"showConsentManager\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 893,
+      "offset": 1054,
       "length": 11,
       "value": "\"debugMode\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 1105,
       "length": 11,
       "value": "\"axeptioPr\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1925,
+      "offset": 3439,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
       "offset": 287,
       "length": 11,
       "value": "\"AxeptioSDK.WebViewImpl\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/tcf-ios-sdk-sources\/tcf-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentStatus.swift",
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/GoogleConsentStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 259,
       "length": 6,
