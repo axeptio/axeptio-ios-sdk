@@ -7,16 +7,16 @@
 #
 
 Pod::Spec.new do |spec|
-  spec.name         = "AxeptioTCFSDK"
+  spec.name         = "AxeptioIOSSDK"
   spec.version      = ENV['LIB_VERSION'] || '1.0.0'
   spec.summary      = "AxeptioSDK for presenting cookies consent to the user"
   spec.description  = <<-DESC
   The Axeptio SDK for iOS Apps ask and collect consent from the user using a simple Swift API, accessible from both Objective-C and swift projects
                       DESC
-  spec.homepage     = "https://github.com/axeptio/tcf-ios-sdk"
+  spec.homepage     = "https://github.com/axeptio/axeptio-ios-sdk"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Axeptio" => "support@axeptio.eu" }
-  spec.source       = { :git => "https://github.com/axeptio/tcf-ios-sdk.git", :tag => spec.version.to_s }
+  spec.source       = { :git => "https://github.com/axeptio/axeptio-ios-sdk.git", :tag => spec.version.to_s }
   spec.vendored_frameworks = "AxeptioSDK.xcframework"
   spec.swift_version = "5.6"
   spec.platform = :ios, "15.0"
