@@ -1760,8 +1760,8 @@
           },
           {
             "kind": "Var",
-            "name": "onConsentChanged",
-            "printedName": "onConsentChanged",
+            "name": "onConsentCleared",
+            "printedName": "onConsentCleared",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1790,8 +1790,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioEventListener(py)onConsentChanged",
-            "mangledName": "$s10AxeptioSDK0A13EventListenerC16onConsentChangedyycSgvp",
+            "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioEventListener(py)onConsentCleared",
+            "mangledName": "$s10AxeptioSDK0A13EventListenerC16onConsentClearedyycSgvp",
             "moduleName": "AxeptioSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -1834,8 +1834,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioEventListener(im)onConsentChanged",
-                "mangledName": "$s10AxeptioSDK0A13EventListenerC16onConsentChangedyycSgvg",
+                "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioEventListener(im)onConsentCleared",
+                "mangledName": "$s10AxeptioSDK0A13EventListenerC16onConsentClearedyycSgvg",
                 "moduleName": "AxeptioSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -1881,8 +1881,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioEventListener(im)setOnConsentChanged:",
-                "mangledName": "$s10AxeptioSDK0A13EventListenerC16onConsentChangedyycSgvs",
+                "usr": "c:@M@AxeptioSDK@objc(cs)AxeptioEventListener(im)setOnConsentCleared:",
+                "mangledName": "$s10AxeptioSDK0A13EventListenerC16onConsentClearedyycSgvs",
                 "moduleName": "AxeptioSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -1903,8 +1903,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10AxeptioSDK0A13EventListenerC16onConsentChangedyycSgvM",
-                "mangledName": "$s10AxeptioSDK0A13EventListenerC16onConsentChangedyycSgvM",
+                "usr": "s:10AxeptioSDK0A13EventListenerC16onConsentClearedyycSgvM",
+                "mangledName": "$s10AxeptioSDK0A13EventListenerC16onConsentClearedyycSgvM",
                 "moduleName": "AxeptioSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -3166,21 +3166,21 @@
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 488,
+      "offset": 501,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 523,
+      "offset": 536,
       "length": 4,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 570,
+      "offset": 583,
       "length": 5,
       "value": "60000"
     },
@@ -3620,8 +3620,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
+      "kind": "Array",
+      "offset": 1158,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3439,
+      "offset": 3535,
       "length": 5,
       "value": "false"
     },
