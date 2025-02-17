@@ -55,7 +55,7 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc final public class AxeptioEventListener : ObjectiveC.NSObject {
   @objc final public var onPopupClosedEvent: (() -> Swift.Void)?
-  @objc final public var onConsentChanged: (() -> Swift.Void)?
+  @objc final public var onConsentCleared: (() -> Swift.Void)?
   @objc final public var onGoogleConsentModeUpdate: ((AxeptioSDK.GoogleConsentV2) -> Swift.Void)?
   @objc override dynamic public init()
   @objc deinit

@@ -327,7 +327,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 SWIFT_CLASS("_TtC10AxeptioSDK20AxeptioEventListener")
 @interface AxeptioEventListener : NSObject
 @property (nonatomic, copy) void (^ _Nullable onPopupClosedEvent)(void);
-@property (nonatomic, copy) void (^ _Nullable onConsentChanged)(void);
+@property (nonatomic, copy) void (^ _Nullable onConsentCleared)(void);
 @property (nonatomic, copy) void (^ _Nullable onGoogleConsentModeUpdate)(GoogleConsentV2 * _Nonnull);
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
