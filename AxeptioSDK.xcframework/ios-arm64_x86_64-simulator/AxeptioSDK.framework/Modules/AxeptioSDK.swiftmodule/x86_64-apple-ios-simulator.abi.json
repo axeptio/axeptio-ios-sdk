@@ -2215,6 +2215,26 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Network",
         "printedName": "Network",
         "declKind": "Import",
@@ -3166,23 +3186,86 @@
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 501,
+      "offset": 590,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 536,
-      "length": 4,
-      "value": "3000"
+      "offset": 625,
+      "length": 3,
+      "value": "300"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioWorker.swift",
       "kind": "IntegerLiteral",
-      "offset": 583,
-      "length": 5,
-      "value": "60000"
+      "offset": 671,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 552,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 640,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 750,
+      "length": 14,
+      "value": "\"io.axept.ios\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "Array",
+      "offset": 2264,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "Array",
+      "offset": 2289,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2498,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2523,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/WEBInAppEvent.swift",
+      "kind": "StringLiteral",
+      "offset": 2546,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Repository\/EventQueueRepository.swift",
@@ -3236,7 +3319,7 @@
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3271,
+      "offset": 3343,
       "length": 5,
       "value": "false"
     },
@@ -3285,252 +3368,252 @@
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 361,
+      "offset": 378,
       "length": 15,
       "value": "\"cookies:close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 400,
+      "offset": 417,
       "length": 14,
       "value": "\"cookies:open\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 464,
       "length": 24,
       "value": "\"cookies:consent:accept\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 504,
+      "offset": 521,
       "length": 24,
       "value": "\"cookies:consent:reject\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 579,
       "length": 25,
       "value": "\"cookies:consent:partial\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 623,
+      "offset": 640,
       "length": 28,
       "value": "\"cookies:vendors:toggle:off\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 686,
+      "offset": 703,
       "length": 27,
       "value": "\"cookies:vendors:toggle:on\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 752,
+      "offset": 769,
       "length": 31,
       "value": "\"cookies:vendors:toggleall:off\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 821,
+      "offset": 838,
       "length": 30,
       "value": "\"ccokies:vendors:toggleall:on\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 872,
+      "offset": 889,
       "length": 10,
       "value": "\"pagehide\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 906,
+      "offset": 923,
       "length": 13,
       "value": "\"pagevisible\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 940,
+      "offset": 957,
       "length": 10,
       "value": "\"pageview\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 998,
       "length": 21,
       "value": "\"cookies:step:change\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 361,
+      "offset": 1075,
+      "length": 19,
+      "value": "\"analytics:collect\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
+      "kind": "StringLiteral",
+      "offset": 378,
       "length": 15,
       "value": "\"cookies:close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 400,
+      "offset": 417,
       "length": 14,
       "value": "\"cookies:open\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 464,
       "length": 24,
       "value": "\"cookies:consent:accept\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 504,
+      "offset": 521,
       "length": 24,
       "value": "\"cookies:consent:reject\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 579,
       "length": 25,
       "value": "\"cookies:consent:partial\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 623,
+      "offset": 640,
       "length": 28,
       "value": "\"cookies:vendors:toggle:off\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 686,
+      "offset": 703,
       "length": 27,
       "value": "\"cookies:vendors:toggle:on\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 752,
+      "offset": 769,
       "length": 31,
       "value": "\"cookies:vendors:toggleall:off\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 821,
+      "offset": 838,
       "length": 30,
       "value": "\"ccokies:vendors:toggleall:on\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 872,
+      "offset": 889,
       "length": 10,
       "value": "\"pagehide\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 906,
+      "offset": 923,
       "length": 13,
       "value": "\"pagevisible\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 940,
+      "offset": 957,
       "length": 10,
       "value": "\"pageview\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 998,
       "length": 21,
       "value": "\"cookies:step:change\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1090,
+      "offset": 1075,
       "length": 19,
       "value": "\"analytics:collect\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1090,
-      "length": 19,
-      "value": "\"analytics:collect\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
-      "kind": "StringLiteral",
-      "offset": 1159,
+      "offset": 1143,
       "length": 10,
       "value": "\"app:open\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1190,
+      "offset": 1174,
       "length": 11,
       "value": "\"app:close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1229,
+      "offset": 1213,
       "length": 19,
       "value": "\"app:cookies:ready\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1273,
+      "offset": 1257,
       "length": 15,
       "value": "\"cookies:close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1159,
+      "offset": 1143,
       "length": 10,
       "value": "\"app:open\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1190,
+      "offset": 1174,
       "length": 11,
       "value": "\"app:close\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1229,
+      "offset": 1213,
       "length": 19,
       "value": "\"app:cookies:ready\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/Events.swift",
       "kind": "StringLiteral",
-      "offset": 1273,
+      "offset": 1257,
       "length": 15,
       "value": "\"cookies:close\""
     },
