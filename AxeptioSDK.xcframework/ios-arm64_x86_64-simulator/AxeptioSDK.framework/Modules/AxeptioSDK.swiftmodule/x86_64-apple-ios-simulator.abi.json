@@ -315,18 +315,25 @@
           {
             "kind": "Function",
             "name": "setUserDeniedTracking",
-            "printedName": "setUserDeniedTracking()",
+            "printedName": "setUserDeniedTracking(denied:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)setUserDeniedTracking",
-            "mangledName": "$s10AxeptioSDK0A0C21setUserDeniedTrackingyyF",
+            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)setUserDeniedTrackingWithDenied:",
+            "mangledName": "$s10AxeptioSDK0A0C21setUserDeniedTracking6deniedySb_tF",
             "moduleName": "AxeptioSDK",
+            "objc_name": "setUserDeniedTrackingWithDenied:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -2689,35 +2696,35 @@
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 896,
       "length": 15,
       "value": "\"axeptio_token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "Array",
-      "offset": 1008,
+      "offset": 1020,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 1066,
+      "offset": 1078,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "IntegerLiteral",
-      "offset": 1160,
+      "offset": 1172,
       "length": 4,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Public\/Axeptio.swift",
       "kind": "StringLiteral",
-      "offset": 752,
+      "offset": 764,
       "length": 7,
       "value": "\"AxeptioSDK.Axeptio\""
     },
@@ -3284,42 +3291,42 @@
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1208,
+      "offset": 1222,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1353,
+      "offset": 1367,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1389,
+      "offset": 1403,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1477,
+      "offset": 1491,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1588,
+      "offset": 1602,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3343,
+      "offset": 3357,
       "length": 5,
       "value": "false"
     },
@@ -3620,105 +3627,105 @@
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 375,
+      "offset": 389,
       "length": 12,
       "value": "\"axeptioSdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 563,
+      "offset": 577,
       "length": 14,
       "value": "\"_ax_tcstring\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 609,
+      "offset": 623,
       "length": 18,
       "value": "\"_ax_app_sdk_mode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 661,
+      "offset": 675,
       "length": 20,
       "value": "\"_ax_app_att_denied\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 711,
+      "offset": 725,
       "length": 15,
       "value": "\"_ax_client_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 762,
+      "offset": 776,
       "length": 21,
       "value": "\"_ax_cookies_version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 823,
+      "offset": 837,
       "length": 10,
       "value": "\"clientId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 878,
+      "offset": 892,
       "length": 16,
       "value": "\"cookiesVersion\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 930,
+      "offset": 944,
       "length": 15,
       "value": "\"axeptio_token\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 1008,
       "length": 20,
       "value": "\"showConsentManager\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 1054,
+      "offset": 1068,
       "length": 11,
       "value": "\"debugMode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 1105,
+      "offset": 1119,
       "length": 11,
       "value": "\"axeptioPr\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "Array",
-      "offset": 1158,
+      "offset": 1172,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3535,
+      "offset": 3993,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 287,
+      "offset": 301,
       "length": 11,
       "value": "\"AxeptioSDK.WebViewImpl\""
     },

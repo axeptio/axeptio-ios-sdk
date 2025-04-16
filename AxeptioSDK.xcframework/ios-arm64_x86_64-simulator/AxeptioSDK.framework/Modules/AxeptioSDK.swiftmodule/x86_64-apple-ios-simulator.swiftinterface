@@ -20,7 +20,7 @@ import _SwiftConcurrencyShims
   @objc final public func initialize(targetService: AxeptioSDK.AxeptioService, clientId: Swift.String, cookiesVersion: Swift.String)
   @objc final public func initialize(targetService: AxeptioSDK.AxeptioService, clientId: Swift.String, cookiesVersion: Swift.String, token: Swift.String)
   @objc final public func setupUI()
-  @objc final public func setUserDeniedTracking()
+  @objc final public func setUserDeniedTracking(denied: Swift.Bool)
   @objc final public func appendAxeptioTokenToURL(_ url: Foundation.URL, token: Swift.String) -> Foundation.URL
   @objc final public func showConsentScreen()
   @objc final public func clearConsent()
