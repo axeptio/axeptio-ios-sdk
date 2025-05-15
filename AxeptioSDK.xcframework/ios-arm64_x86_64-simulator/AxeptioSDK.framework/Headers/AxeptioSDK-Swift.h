@@ -313,6 +313,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 - (void)initializeWithTargetService:(enum AxeptioService)targetService clientId:(NSString * _Nonnull)clientId cookiesVersion:(NSString * _Nonnull)cookiesVersion token:(NSString * _Nonnull)token;
 - (void)setupUI;
 - (void)setUserDeniedTrackingWithDenied:(BOOL)denied;
+- (void)setDisplayPopUpOnEnterForegroundWithDisplay:(BOOL)display;
 - (NSURL * _Nonnull)appendAxeptioTokenToURL:(NSURL * _Nonnull)url token:(NSString * _Nonnull)token SWIFT_WARN_UNUSED_RESULT;
 - (void)showConsentScreen;
 - (void)clearConsent;
@@ -686,6 +687,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 - (void)initializeWithTargetService:(enum AxeptioService)targetService clientId:(NSString * _Nonnull)clientId cookiesVersion:(NSString * _Nonnull)cookiesVersion token:(NSString * _Nonnull)token;
 - (void)setupUI;
 - (void)setUserDeniedTrackingWithDenied:(BOOL)denied;
+- (void)setDisplayPopUpOnEnterForegroundWithDisplay:(BOOL)display;
 - (NSURL * _Nonnull)appendAxeptioTokenToURL:(NSURL * _Nonnull)url token:(NSString * _Nonnull)token SWIFT_WARN_UNUSED_RESULT;
 - (void)showConsentScreen;
 - (void)clearConsent;
