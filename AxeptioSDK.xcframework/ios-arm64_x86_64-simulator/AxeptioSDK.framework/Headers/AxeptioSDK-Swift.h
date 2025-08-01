@@ -319,6 +319,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 - (void)clearConsent;
 - (void)setEventListener:(AxeptioEventListener * _Nonnull)listener;
 - (void)removeEventListener:(AxeptioEventListener * _Nonnull)listener;
+- (void)allowPopupDisplayWithRejectedDeviceTrackingPermissions:(BOOL)allow;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -693,6 +694,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 - (void)clearConsent;
 - (void)setEventListener:(AxeptioEventListener * _Nonnull)listener;
 - (void)removeEventListener:(AxeptioEventListener * _Nonnull)listener;
+- (void)allowPopupDisplayWithRejectedDeviceTrackingPermissions:(BOOL)allow;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
