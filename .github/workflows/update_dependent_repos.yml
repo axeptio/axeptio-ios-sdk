@@ -232,6 +232,19 @@ jobs:
           fi
           
           BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          
+          # Check if branch already exists remotely and delete it
+          if git ls-remote --exit-code --heads origin "$BRANCH_NAME" >/dev/null 2>&1; then
+            echo "⚠️  Branch $BRANCH_NAME already exists on remote, deleting it first"
+            git push origin --delete "$BRANCH_NAME" || echo "Failed to delete remote branch (might not exist or no permissions)"
+          fi
+          
+          # Check if branch exists locally and delete it
+          if git show-ref --verify --quiet "refs/heads/$BRANCH_NAME"; then
+            echo "⚠️  Branch $BRANCH_NAME already exists locally, deleting it"
+            git branch -D "$BRANCH_NAME"
+          fi
+          
           git checkout -b "$BRANCH_NAME"
           git add -A
           git commit -m "Update iOS SDK to version $IOS_VERSION"
@@ -243,7 +256,7 @@ jobs:
           fi
           
       - name: Create Pull Request
-        if: inputs.dry_run != true && steps.update_files.outputs.has_changes == 'true' && steps.update_files.outputs.has_changes == 'true'
+        if: inputs.dry_run != true && steps.update_files.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
@@ -383,6 +396,19 @@ jobs:
           fi
           
           BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          
+          # Check if branch already exists remotely and delete it
+          if git ls-remote --exit-code --heads origin "$BRANCH_NAME" >/dev/null 2>&1; then
+            echo "⚠️  Branch $BRANCH_NAME already exists on remote, deleting it first"
+            git push origin --delete "$BRANCH_NAME" || echo "Failed to delete remote branch (might not exist or no permissions)"
+          fi
+          
+          # Check if branch exists locally and delete it
+          if git show-ref --verify --quiet "refs/heads/$BRANCH_NAME"; then
+            echo "⚠️  Branch $BRANCH_NAME already exists locally, deleting it"
+            git branch -D "$BRANCH_NAME"
+          fi
+          
           git checkout -b "$BRANCH_NAME"
           git add -A
           git commit -m "Update iOS SDK to version $IOS_VERSION and bump Flutter SDK version"
@@ -522,6 +548,19 @@ jobs:
           fi
           
           BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          
+          # Check if branch already exists remotely and delete it
+          if git ls-remote --exit-code --heads origin "$BRANCH_NAME" >/dev/null 2>&1; then
+            echo "⚠️  Branch $BRANCH_NAME already exists on remote, deleting it first"
+            git push origin --delete "$BRANCH_NAME" || echo "Failed to delete remote branch (might not exist or no permissions)"
+          fi
+          
+          # Check if branch exists locally and delete it
+          if git show-ref --verify --quiet "refs/heads/$BRANCH_NAME"; then
+            echo "⚠️  Branch $BRANCH_NAME already exists locally, deleting it"
+            git branch -D "$BRANCH_NAME"
+          fi
+          
           git checkout -b "$BRANCH_NAME"
           git add -A
           git commit -m "Update iOS SDK to version $IOS_VERSION and bump React Native SDK version"
