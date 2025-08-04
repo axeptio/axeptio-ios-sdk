@@ -84,6 +84,12 @@ jobs:
             rm Package.swift.bak
           fi
           
+          # Check if there are any changes to commit
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes detected. Version might already be up to date."
+            exit 0
+          fi
+          
           git add -A
           git commit -m "Update iOS SDK to version $IOS_VERSION"
           
@@ -145,6 +151,12 @@ jobs:
           if [ -f "ios/axeptio_sdk.podspec" ]; then
             sed -i.bak "s/s.dependency 'AxeptioSDK', '~> [0-9.]*'/s.dependency 'AxeptioSDK', '~> $IOS_VERSION'/" ios/axeptio_sdk.podspec
             rm ios/axeptio_sdk.podspec.bak
+          fi
+          
+          # Check if there are any changes to commit
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes detected. Version might already be up to date."
+            exit 0
           fi
           
           git add -A
