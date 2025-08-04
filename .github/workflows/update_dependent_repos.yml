@@ -35,14 +35,71 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Check token availability
+      - name: Check token availability and permissions
         id: check_token
         env:
           GH_TOKEN_DEPENDENCY_ONLY_IOS: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
         run: |
+          echo "⚙️ Workflow Settings:"
+          echo "  dry_run: ${{ inputs.dry_run }}"
+          echo "  ios_sdk_version: ${{ inputs.ios_sdk_version }}"
+          echo "  trigger: ${{ github.event_name }}"
+          echo ""
+          
           if [ -n "$GH_TOKEN_DEPENDENCY_ONLY_IOS" ]; then
             echo "has_token=true" >> "$GITHUB_OUTPUT"
             echo "🔐 GH_TOKEN_DEPENDENCY_ONLY_IOS: [REDACTED] ($(echo -n "$GH_TOKEN_DEPENDENCY_ONLY_IOS" | shasum -a 256 | cut -d' ' -f1))"
+            echo ""
+            
+            echo "🔍 Checking GH_TOKEN_DEPENDENCY_ONLY_IOS permissions..."
+            
+            # Function to check detailed permissions
+            check_repo_permissions() {
+              local repo="$1"
+              
+              echo "📋 Checking GH_TOKEN_DEPENDENCY_ONLY_IOS for $repo..."
+              
+              if GITHUB_TOKEN="$GH_TOKEN_DEPENDENCY_ONLY_IOS" gh api repos/$repo --silent; then
+                echo "✅ GH_TOKEN_DEPENDENCY_ONLY_IOS can access $repo"
+                
+                # Get detailed permissions
+                echo "🔐 Detailed permissions for $repo:"
+                PERMS=$(GITHUB_TOKEN="$GH_TOKEN_DEPENDENCY_ONLY_IOS" gh api repos/$repo --jq '.permissions // {}')
+                echo "  admin: $(echo "$PERMS" | jq -r '.admin // false')"
+                echo "  maintain: $(echo "$PERMS" | jq -r '.maintain // false')"
+                echo "  push: $(echo "$PERMS" | jq -r '.push // false')"
+                echo "  triage: $(echo "$PERMS" | jq -r '.triage // false')"
+                echo "  pull: $(echo "$PERMS" | jq -r '.pull // false')"
+                
+                # Test specific operations
+                echo "🧪 Testing operations:"
+                
+                # Test if can create branches/push
+                if GITHUB_TOKEN="$GH_TOKEN_DEPENDENCY_ONLY_IOS" gh api repos/$repo/git/refs --silent; then
+                  echo "  ✅ Can access git refs (push capability likely)"
+                else
+                  echo "  ❌ Cannot access git refs (no push capability)"
+                fi
+                
+                # Test if can create PRs
+                if GITHUB_TOKEN="$GH_TOKEN_DEPENDENCY_ONLY_IOS" gh api repos/$repo/pulls --silent; then
+                  echo "  ✅ Can access pull requests"
+                else
+                  echo "  ❌ Cannot access pull requests"
+                fi
+                
+              else
+                echo "❌ GH_TOKEN_DEPENDENCY_ONLY_IOS cannot access $repo"
+                echo "  This token needs at least 'Contents: Write' and 'Pull requests: Write' permissions"
+              fi
+              echo ""
+            }
+            
+            # Check token against all target repositories
+            check_repo_permissions "axeptio/sample-app-ios"
+            check_repo_permissions "axeptio/flutter-sdk"
+            check_repo_permissions "axeptio/react-native-sdk"
+            
           else
             echo "has_token=false" >> "$GITHUB_OUTPUT"
             echo "⚠️  GH_TOKEN_DEPENDENCY_ONLY_IOS: Not configured"
@@ -75,6 +132,23 @@ jobs:
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
+          # Display workflow settings for this job
+          echo "⚙️ Job Settings (sample-app-ios):"
+          echo "  ios_version: $IOS_VERSION"
+          echo "  dry_run: $DRY_RUN"
+          echo "  trigger: ${{ github.event_name }}"
+          echo ""
+          
+          # Default to dry-run if no input provided (for automatic triggers)
+          if [ -z "$DRY_RUN" ]; then
+            DRY_RUN="true"
+          fi
+          
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "🧪 Running in DRY-RUN mode - no actual PRs will be created"
+          fi
+          echo ""
+          
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
@@ -143,6 +217,23 @@ jobs:
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
+          # Display workflow settings for this job
+          echo "⚙️ Job Settings (flutter-sdk):"
+          echo "  ios_version: $IOS_VERSION"
+          echo "  dry_run: $DRY_RUN"
+          echo "  trigger: ${{ github.event_name }}"
+          echo ""
+          
+          # Default to dry-run if no input provided (for automatic triggers)
+          if [ -z "$DRY_RUN" ]; then
+            DRY_RUN="true"
+          fi
+          
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "🧪 Running in DRY-RUN mode - no actual PRs will be created"
+          fi
+          echo ""
+          
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
@@ -205,6 +296,23 @@ jobs:
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
           DRY_RUN: ${{ inputs.dry_run }}
         run: |
+          # Display workflow settings for this job
+          echo "⚙️ Job Settings (react-native-sdk):"
+          echo "  ios_version: $IOS_VERSION"
+          echo "  dry_run: $DRY_RUN"
+          echo "  trigger: ${{ github.event_name }}"
+          echo ""
+          
+          # Default to dry-run if no input provided (for automatic triggers)
+          if [ -z "$DRY_RUN" ]; then
+            DRY_RUN="true"
+          fi
+          
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "🧪 Running in DRY-RUN mode - no actual PRs will be created"
+          fi
+          echo ""
+          
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
