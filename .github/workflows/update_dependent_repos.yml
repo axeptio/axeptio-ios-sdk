@@ -182,6 +182,27 @@ jobs:
             echo "⚠️  Package.swift not found"
           fi
           
+          # Update Xcode project.pbxproj files for Swift Package Manager
+          find . -name "project.pbxproj" -type f | while read -r pbxproj_file; do
+            if grep -q "axeptio-ios-sdk" "$pbxproj_file"; then
+              echo "📝 Updating $pbxproj_file..."
+              echo "Current minimumVersion:"
+              grep -n "minimumVersion.*[0-9]\+\.[0-9]\+\.[0-9]\+" "$pbxproj_file" | grep -A5 -B5 "axeptio-ios-sdk" || echo "No minimumVersion found"
+              
+              # Update minimumVersion for axeptio-ios-sdk package
+              sed -i.bak "s/\(minimumVersion = \)[0-9]\+\.[0-9]\+\.[0-9]\+\(.*axeptio-ios-sdk\|.*\n.*axeptio-ios-sdk\)/\1$IOS_VERSION\2/" "$pbxproj_file"
+              
+              # Alternative pattern in case the structure is different
+              sed -i.bak "s/\(minimumVersion = \)[0-9]\+\.[0-9]\+\.[0-9]\+;/\1$IOS_VERSION;/g" "$pbxproj_file"
+              
+              echo "Updated minimumVersion:"
+              grep -n "minimumVersion.*[0-9]\+\.[0-9]\+\.[0-9]\+" "$pbxproj_file" | grep -A5 -B5 "axeptio-ios-sdk" || echo "No minimumVersion found"
+              rm "${pbxproj_file}.bak"
+            else
+              echo "⚠️  $pbxproj_file doesn't contain axeptio-ios-sdk reference"
+            fi
+          done
+          
           echo "🔍 Git diff output:"
           git diff
           echo "🔍 Git diff --staged output:"
@@ -217,7 +238,7 @@ jobs:
           BODY="This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
           
           ## Changes
-          - Updated iOS SDK version in Podfile and/or Package.swift
+          - Updated iOS SDK version in Podfile, Package.swift, and/or Xcode project files
           
           ## Notes
           This PR was automatically generated when iOS SDK version $IOS_VERSION was published."
@@ -268,6 +289,35 @@ jobs:
           echo "🔍 Files before update:"
           ls -la
           
+          # Update pubspec.yaml version (bump patch version of flutter SDK)
+          if [ -f "pubspec.yaml" ]; then
+            echo "📝 Updating pubspec.yaml version..."
+            echo "Current version:"
+            grep -n "^version:" pubspec.yaml || echo "No version found in pubspec.yaml"
+            
+            # Get current flutter SDK version and increment patch version
+            CURRENT_FLUTTER_VERSION=$(grep "^version:" pubspec.yaml | sed 's/version: //')
+            echo "Current Flutter SDK version: $CURRENT_FLUTTER_VERSION"
+            
+            # Split version into components
+            IFS='.' read -r -a VERSION_PARTS <<< "$CURRENT_FLUTTER_VERSION"
+            MAJOR=${VERSION_PARTS[0]}
+            MINOR=${VERSION_PARTS[1]}
+            PATCH=${VERSION_PARTS[2]}
+            
+            # Increment patch version
+            NEW_PATCH=$((PATCH + 1))
+            NEW_FLUTTER_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
+            
+            echo "New Flutter SDK version: $NEW_FLUTTER_VERSION"
+            sed -i.bak "s/^version: .*/version: $NEW_FLUTTER_VERSION/" pubspec.yaml
+            echo "Updated version:"
+            grep -n "^version:" pubspec.yaml || echo "No version found in pubspec.yaml"
+            rm pubspec.yaml.bak
+          else
+            echo "⚠️  pubspec.yaml not found"
+          fi
+          
           # Update ios/axeptio_sdk.podspec
           if [ -f "ios/axeptio_sdk.podspec" ]; then
             echo "📝 Updating ios/axeptio_sdk.podspec..."
@@ -299,7 +349,7 @@ jobs:
           BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
           git checkout -b "$BRANCH_NAME"
           git add -A
-          git commit -m "Update iOS SDK to version $IOS_VERSION"
+          git commit -m "Update iOS SDK to version $IOS_VERSION and bump Flutter SDK version"
           
           if [ "$DRY_RUN" != "true" ]; then
             git push origin "$BRANCH_NAME"
@@ -317,6 +367,7 @@ jobs:
           
           ## Changes
           - Updated iOS SDK dependency in ios/axeptio_sdk.podspec
+          - Bumped Flutter SDK version in pubspec.yaml
           
           ## Notes
           This PR was automatically generated when iOS SDK version $IOS_VERSION was published."
@@ -367,30 +418,56 @@ jobs:
           echo "🔍 Files before update:"
           ls -la
           
-          # Update react-native-axeptio-sdk.podspec
+          # Update react-native-axeptio-sdk.podspec (bump its own version first)
           if [ -f "react-native-axeptio-sdk.podspec" ]; then
-            echo "📝 Updating react-native-axeptio-sdk.podspec..."
-            echo "Current content:"
-            grep -n "AxeptioSDK" react-native-axeptio-sdk.podspec || echo "No AxeptioSDK found in podspec"
-            sed -i.bak "s/s.dependency \"AxeptioSDK\", \"~> [0-9.]*\"/s.dependency \"AxeptioSDK\", \"~> $IOS_VERSION\"/" react-native-axeptio-sdk.podspec
+            echo "📝 Updating react-native-axeptio-sdk.podspec version..."
+            
+            # Get current React Native SDK version and increment patch version
+            CURRENT_RN_VERSION=$(grep "s.version" react-native-axeptio-sdk.podspec | sed 's/.*"\([0-9.]*\)".*/\1/')
+            echo "Current React Native SDK version: $CURRENT_RN_VERSION"
+            
+            # Split version into components
+            IFS='.' read -r -a VERSION_PARTS <<< "$CURRENT_RN_VERSION"
+            MAJOR=${VERSION_PARTS[0]}
+            MINOR=${VERSION_PARTS[1]}
+            PATCH=${VERSION_PARTS[2]}
+            
+            # Increment patch version
+            NEW_PATCH=$((PATCH + 1))
+            NEW_RN_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
+            
+            echo "New React Native SDK version: $NEW_RN_VERSION"
+            sed -i.bak "s/s.version.*=.*/s.version          = \"$NEW_RN_VERSION\"/" react-native-axeptio-sdk.podspec
+            
+            echo "📝 Updating AxeptioIOSSDK dependency..."
+            echo "Current iOS dependency:"
+            grep -n "AxeptioIOSSDK" react-native-axeptio-sdk.podspec || echo "No AxeptioIOSSDK found in podspec"
+            
+            # Update the AxeptioIOSSDK dependency (note: uses fixed version, not ~>)
+            sed -i.bak "s/s.dependency \"AxeptioIOSSDK\", \"[0-9.]*\"/s.dependency \"AxeptioIOSSDK\", \"$IOS_VERSION\"/" react-native-axeptio-sdk.podspec
+            
             echo "Updated content:"
-            grep -n "AxeptioSDK" react-native-axeptio-sdk.podspec || echo "No AxeptioSDK found in podspec"
+            grep -n "s.version\|AxeptioIOSSDK" react-native-axeptio-sdk.podspec || echo "No version/dependency found"
             rm react-native-axeptio-sdk.podspec.bak
           else
             echo "⚠️  react-native-axeptio-sdk.podspec not found"
           fi
           
-          # Also check for alternative naming
-          if [ -f "ios/AxeptioSDK.podspec" ]; then
-            echo "📝 Updating ios/AxeptioSDK.podspec..."
-            echo "Current content:"
-            grep -n "AxeptioSDK" ios/AxeptioSDK.podspec || echo "No AxeptioSDK found in podspec"
-            sed -i.bak "s/s.dependency \"AxeptioSDK\", \"~> [0-9.]*\"/s.dependency \"AxeptioSDK\", \"~> $IOS_VERSION\"/" ios/AxeptioSDK.podspec
-            echo "Updated content:"
-            grep -n "AxeptioSDK" ios/AxeptioSDK.podspec || echo "No AxeptioSDK found in podspec"
-            rm ios/AxeptioSDK.podspec.bak
+          # Also update package.json version if it exists
+          if [ -f "package.json" ]; then
+            echo "📝 Updating package.json version..."
+            echo "Current version:"
+            grep -n "\"version\":" package.json || echo "No version found in package.json"
+            
+            # Use the same incremented version as the podspec
+            if [ -n "$NEW_RN_VERSION" ]; then
+              sed -i.bak "s/\"version\": \"[0-9.]*\"/\"version\": \"$NEW_RN_VERSION\"/" package.json
+              echo "Updated version:"
+              grep -n "\"version\":" package.json || echo "No version found in package.json"
+              rm package.json.bak
+            fi
           else
-            echo "⚠️  ios/AxeptioSDK.podspec not found"
+            echo "⚠️  package.json not found"
           fi
           
           echo "🔍 Git diff output:"
@@ -411,7 +488,7 @@ jobs:
           BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
           git checkout -b "$BRANCH_NAME"
           git add -A
-          git commit -m "Update iOS SDK to version $IOS_VERSION"
+          git commit -m "Update iOS SDK to version $IOS_VERSION and bump React Native SDK version"
           
           if [ "$DRY_RUN" != "true" ]; then
             git push origin "$BRANCH_NAME"
@@ -428,7 +505,8 @@ jobs:
           BODY="This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
           
           ## Changes
-          - Updated iOS SDK dependency in podspec file
+          - Updated AxeptioIOSSDK dependency in react-native-axeptio-sdk.podspec
+          - Bumped React Native SDK version in podspec and package.json
           
           ## Notes
           This PR was automatically generated when iOS SDK version $IOS_VERSION was published."
