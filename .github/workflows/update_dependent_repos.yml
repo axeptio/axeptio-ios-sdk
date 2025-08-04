@@ -101,13 +101,16 @@ jobs:
         run: |
           gh pr create \
             --title "Update iOS SDK to version $IOS_VERSION" \
-            --body "This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+            --body "$(cat <<EOF
+This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
 
 ## Changes
 - Updated iOS SDK version in Podfile and/or Package.swift
 
 ## Notes
-This PR was automatically generated when iOS SDK version $IOS_VERSION was published." \
+This PR was automatically generated when iOS SDK version $IOS_VERSION was published.
+EOF
+)" \
             --base master \
             --head "update-ios-sdk-$IOS_VERSION"
 
@@ -162,13 +165,16 @@ This PR was automatically generated when iOS SDK version $IOS_VERSION was publis
         run: |
           gh pr create \
             --title "Update iOS SDK to version $IOS_VERSION" \
-            --body "This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+            --body "$(cat <<EOF
+This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
 
 ## Changes
 - Updated iOS SDK dependency in ios/axeptio_sdk.podspec
 
 ## Notes
-This PR was automatically generated when iOS SDK version $IOS_VERSION was published." \
+This PR was automatically generated when iOS SDK version $IOS_VERSION was published.
+EOF
+)" \
             --base master \
             --head "update-ios-sdk-$IOS_VERSION"
 
@@ -229,12 +235,15 @@ This PR was automatically generated when iOS SDK version $IOS_VERSION was publis
         run: |
           gh pr create \
             --title "Update iOS SDK to version $IOS_VERSION" \
-            --body "This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+            --body "$(cat <<EOF
+This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
 
 ## Changes
 - Updated iOS SDK dependency in podspec file
 
 ## Notes
-This PR was automatically generated when iOS SDK version $IOS_VERSION was published." \
+This PR was automatically generated when iOS SDK version $IOS_VERSION was published.
+EOF
+)" \
             --base master \
             --head "update-ios-sdk-$IOS_VERSION"
