@@ -136,7 +136,7 @@ jobs:
       - name: Checkout flutter-sdk
         uses: actions/checkout@v4
         with:
-          repository: axeptio/axeptio-flutter-sdk
+          repository: axeptio/flutter-sdk
           token: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           
       - name: Create branch and update version
@@ -199,7 +199,7 @@ jobs:
       - name: Checkout react-native-sdk
         uses: actions/checkout@v4
         with:
-          repository: axeptio/react-native-axeptio-sdk
+          repository: axeptio/react-native-sdk
           token: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           
       - name: Create branch and update version
@@ -275,7 +275,7 @@ jobs:
           echo ""
           echo "Without this token, the workflow cannot:"
           echo "  - Update axeptio/sample-app-ios"
-          echo "  - Update axeptio/axeptio-flutter-sdk"
-          echo "  - Update axeptio/react-native-axeptio-sdk"
+          echo "  - Update axeptio/flutter-sdk"
+          echo "  - Update axeptio/react-native-sdk"
           echo ""
           echo "iOS SDK version that would have been used: ${{ needs.get_version.outputs.version }}"
