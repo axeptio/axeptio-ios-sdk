@@ -128,6 +128,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           
       - name: Create branch and update version
+        id: update_files
         env:
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
           DRY_RUN: ${{ inputs.dry_run }}
@@ -152,22 +153,48 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
+          echo "🔍 Files before update:"
+          ls -la
+          
           # Update Podfile
           if [ -f "Podfile" ]; then
+            echo "📝 Updating Podfile..."
+            echo "Current content:"
+            grep -n "AxeptioSDK" Podfile || echo "No AxeptioSDK found in Podfile"
             sed -i.bak "s/pod 'AxeptioSDK', '~> [0-9.]*'/pod 'AxeptioSDK', '~> $IOS_VERSION'/" Podfile
+            echo "Updated content:"
+            grep -n "AxeptioSDK" Podfile || echo "No AxeptioSDK found in Podfile"
             rm Podfile.bak
+          else
+            echo "⚠️  Podfile not found"
           fi
           
           # Update Package.swift if it exists
           if [ -f "Package.swift" ]; then
+            echo "📝 Updating Package.swift..."
+            echo "Current content:"
+            grep -n "from:" Package.swift || echo "No version found in Package.swift"
             sed -i.bak "s/from: \"[0-9.]*\"/from: \"$IOS_VERSION\"/" Package.swift
+            echo "Updated content:"
+            grep -n "from:" Package.swift || echo "No version found in Package.swift"
             rm Package.swift.bak
+          else
+            echo "⚠️  Package.swift not found"
           fi
+          
+          echo "🔍 Git diff output:"
+          git diff
+          echo "🔍 Git diff --staged output:"
+          git diff --staged
           
           # Check if there are any changes to commit
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes detected. Version might already be up to date."
+            echo "❌ No changes detected. Version might already be up to date."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
             exit 0
+          else
+            echo "✅ Changes detected, proceeding with commit"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
           
           BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
@@ -182,7 +209,7 @@ jobs:
           fi
           
       - name: Create Pull Request
-        if: inputs.dry_run != true
+        if: inputs.dry_run != true && steps.update_files.outputs.has_changes == 'true' && steps.update_files.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
@@ -213,6 +240,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           
       - name: Create branch and update version
+        id: update_files
         env:
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
           DRY_RUN: ${{ inputs.dry_run }}
@@ -237,16 +265,35 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
+          echo "🔍 Files before update:"
+          ls -la
+          
           # Update ios/axeptio_sdk.podspec
           if [ -f "ios/axeptio_sdk.podspec" ]; then
+            echo "📝 Updating ios/axeptio_sdk.podspec..."
+            echo "Current content:"
+            grep -n "AxeptioSDK" ios/axeptio_sdk.podspec || echo "No AxeptioSDK found in podspec"
             sed -i.bak "s/s.dependency 'AxeptioSDK', '~> [0-9.]*'/s.dependency 'AxeptioSDK', '~> $IOS_VERSION'/" ios/axeptio_sdk.podspec
+            echo "Updated content:"
+            grep -n "AxeptioSDK" ios/axeptio_sdk.podspec || echo "No AxeptioSDK found in podspec"
             rm ios/axeptio_sdk.podspec.bak
+          else
+            echo "⚠️  ios/axeptio_sdk.podspec not found"
           fi
+          
+          echo "🔍 Git diff output:"
+          git diff
+          echo "🔍 Git diff --staged output:"
+          git diff --staged
           
           # Check if there are any changes to commit
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes detected. Version might already be up to date."
+            echo "❌ No changes detected. Version might already be up to date."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
             exit 0
+          else
+            echo "✅ Changes detected, proceeding with commit"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
           
           BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
@@ -261,7 +308,7 @@ jobs:
           fi
           
       - name: Create Pull Request
-        if: inputs.dry_run != true
+        if: inputs.dry_run != true && steps.update_files.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
@@ -292,6 +339,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           
       - name: Create branch and update version
+        id: update_files
         env:
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
           DRY_RUN: ${{ inputs.dry_run }}
@@ -316,22 +364,48 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
+          echo "🔍 Files before update:"
+          ls -la
+          
           # Update react-native-axeptio-sdk.podspec
           if [ -f "react-native-axeptio-sdk.podspec" ]; then
+            echo "📝 Updating react-native-axeptio-sdk.podspec..."
+            echo "Current content:"
+            grep -n "AxeptioSDK" react-native-axeptio-sdk.podspec || echo "No AxeptioSDK found in podspec"
             sed -i.bak "s/s.dependency \"AxeptioSDK\", \"~> [0-9.]*\"/s.dependency \"AxeptioSDK\", \"~> $IOS_VERSION\"/" react-native-axeptio-sdk.podspec
+            echo "Updated content:"
+            grep -n "AxeptioSDK" react-native-axeptio-sdk.podspec || echo "No AxeptioSDK found in podspec"
             rm react-native-axeptio-sdk.podspec.bak
+          else
+            echo "⚠️  react-native-axeptio-sdk.podspec not found"
           fi
           
           # Also check for alternative naming
           if [ -f "ios/AxeptioSDK.podspec" ]; then
+            echo "📝 Updating ios/AxeptioSDK.podspec..."
+            echo "Current content:"
+            grep -n "AxeptioSDK" ios/AxeptioSDK.podspec || echo "No AxeptioSDK found in podspec"
             sed -i.bak "s/s.dependency \"AxeptioSDK\", \"~> [0-9.]*\"/s.dependency \"AxeptioSDK\", \"~> $IOS_VERSION\"/" ios/AxeptioSDK.podspec
+            echo "Updated content:"
+            grep -n "AxeptioSDK" ios/AxeptioSDK.podspec || echo "No AxeptioSDK found in podspec"
             rm ios/AxeptioSDK.podspec.bak
+          else
+            echo "⚠️  ios/AxeptioSDK.podspec not found"
           fi
+          
+          echo "🔍 Git diff output:"
+          git diff
+          echo "🔍 Git diff --staged output:"
+          git diff --staged
           
           # Check if there are any changes to commit
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes detected. Version might already be up to date."
+            echo "❌ No changes detected. Version might already be up to date."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
             exit 0
+          else
+            echo "✅ Changes detected, proceeding with commit"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
           
           BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
@@ -346,7 +420,7 @@ jobs:
           fi
           
       - name: Create Pull Request
-        if: inputs.dry_run != true
+        if: inputs.dry_run != true && steps.update_files.outputs.has_changes == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
