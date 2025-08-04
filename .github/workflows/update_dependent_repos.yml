@@ -1,0 +1,240 @@
+name: update_dependent_repos
+
+on:
+  workflow_dispatch:
+    inputs:
+      ios_sdk_version:
+        description: 'iOS SDK version to update to (e.g., 2.0.11)'
+        required: true
+        type: string
+      dry_run:
+        description: 'Run in dry-run mode (skip creating PRs)'
+        required: false
+        default: false
+        type: boolean
+  workflow_run:
+    workflows: ["deploy_to_cocoapods"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  get_version:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.set_version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        if: github.event_name != 'workflow_dispatch'
+        with:
+          fetch-depth: 0
+      
+      - name: Set version
+        id: set_version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "version=${{ inputs.ios_sdk_version }}" >> "$GITHUB_OUTPUT"
+          else
+            git fetch --tags
+            VERSION=$(git tag | sort -V | tail -1)
+            echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          fi
+          
+  update_sample_app:
+    needs: get_version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate token
+        id: generate_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      
+      - name: Checkout sample-app-ios
+        uses: actions/checkout@v4
+        with:
+          repository: axeptio/sample-app-ios
+          token: ${{ steps.generate_token.outputs.token }}
+          
+      - name: Create branch and update version
+        env:
+          IOS_VERSION: ${{ needs.get_version.outputs.version }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          git checkout -b "$BRANCH_NAME"
+          
+          # Update Podfile
+          if [ -f "Podfile" ]; then
+            sed -i.bak "s/pod 'AxeptioSDK', '~> [0-9.]*'/pod 'AxeptioSDK', '~> $IOS_VERSION'/" Podfile
+            rm Podfile.bak
+          fi
+          
+          # Update Package.swift if it exists
+          if [ -f "Package.swift" ]; then
+            sed -i.bak "s/from: \"[0-9.]*\"/from: \"$IOS_VERSION\"/" Package.swift
+            rm Package.swift.bak
+          fi
+          
+          git add -A
+          git commit -m "Update iOS SDK to version $IOS_VERSION"
+          
+          if [ "$DRY_RUN" != "true" ]; then
+            git push origin "$BRANCH_NAME"
+          else
+            echo "Dry-run: Would push branch $BRANCH_NAME"
+          fi
+          
+      - name: Create Pull Request
+        if: inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+          IOS_VERSION: ${{ needs.get_version.outputs.version }}
+        run: |
+          gh pr create \
+            --title "Update iOS SDK to version $IOS_VERSION" \
+            --body "This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+
+## Changes
+- Updated iOS SDK version in Podfile and/or Package.swift
+
+## Notes
+This PR was automatically generated when iOS SDK version $IOS_VERSION was published." \
+            --base master \
+            --head "update-ios-sdk-$IOS_VERSION"
+
+  update_flutter_sdk:
+    needs: get_version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate token
+        id: generate_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      
+      - name: Checkout flutter-sdk
+        uses: actions/checkout@v4
+        with:
+          repository: axeptio/axeptio-flutter-sdk
+          token: ${{ steps.generate_token.outputs.token }}
+          
+      - name: Create branch and update version
+        env:
+          IOS_VERSION: ${{ needs.get_version.outputs.version }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          git checkout -b "$BRANCH_NAME"
+          
+          # Update ios/axeptio_sdk.podspec
+          if [ -f "ios/axeptio_sdk.podspec" ]; then
+            sed -i.bak "s/s.dependency 'AxeptioSDK', '~> [0-9.]*'/s.dependency 'AxeptioSDK', '~> $IOS_VERSION'/" ios/axeptio_sdk.podspec
+            rm ios/axeptio_sdk.podspec.bak
+          fi
+          
+          git add -A
+          git commit -m "Update iOS SDK to version $IOS_VERSION"
+          
+          if [ "$DRY_RUN" != "true" ]; then
+            git push origin "$BRANCH_NAME"
+          else
+            echo "Dry-run: Would push branch $BRANCH_NAME"
+          fi
+          
+      - name: Create Pull Request
+        if: inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+          IOS_VERSION: ${{ needs.get_version.outputs.version }}
+        run: |
+          gh pr create \
+            --title "Update iOS SDK to version $IOS_VERSION" \
+            --body "This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+
+## Changes
+- Updated iOS SDK dependency in ios/axeptio_sdk.podspec
+
+## Notes
+This PR was automatically generated when iOS SDK version $IOS_VERSION was published." \
+            --base master \
+            --head "update-ios-sdk-$IOS_VERSION"
+
+  update_react_native_sdk:
+    needs: get_version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate token
+        id: generate_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      
+      - name: Checkout react-native-sdk
+        uses: actions/checkout@v4
+        with:
+          repository: axeptio/react-native-axeptio-sdk
+          token: ${{ steps.generate_token.outputs.token }}
+          
+      - name: Create branch and update version
+        env:
+          IOS_VERSION: ${{ needs.get_version.outputs.version }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          git checkout -b "$BRANCH_NAME"
+          
+          # Update react-native-axeptio-sdk.podspec
+          if [ -f "react-native-axeptio-sdk.podspec" ]; then
+            sed -i.bak "s/s.dependency \"AxeptioSDK\", \"~> [0-9.]*\"/s.dependency \"AxeptioSDK\", \"~> $IOS_VERSION\"/" react-native-axeptio-sdk.podspec
+            rm react-native-axeptio-sdk.podspec.bak
+          fi
+          
+          # Also check for alternative naming
+          if [ -f "ios/AxeptioSDK.podspec" ]; then
+            sed -i.bak "s/s.dependency \"AxeptioSDK\", \"~> [0-9.]*\"/s.dependency \"AxeptioSDK\", \"~> $IOS_VERSION\"/" ios/AxeptioSDK.podspec
+            rm ios/AxeptioSDK.podspec.bak
+          fi
+          
+          git add -A
+          git commit -m "Update iOS SDK to version $IOS_VERSION"
+          
+          if [ "$DRY_RUN" != "true" ]; then
+            git push origin "$BRANCH_NAME"
+          else
+            echo "Dry-run: Would push branch $BRANCH_NAME"
+          fi
+          
+      - name: Create Pull Request
+        if: inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+          IOS_VERSION: ${{ needs.get_version.outputs.version }}
+        run: |
+          gh pr create \
+            --title "Update iOS SDK to version $IOS_VERSION" \
+            --body "This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+
+## Changes
+- Updated iOS SDK dependency in podspec file
+
+## Notes
+This PR was automatically generated when iOS SDK version $IOS_VERSION was published." \
+            --base master \
+            --head "update-ios-sdk-$IOS_VERSION"
