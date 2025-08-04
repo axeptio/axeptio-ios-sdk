@@ -186,18 +186,31 @@ jobs:
           find . -name "project.pbxproj" -type f | while read -r pbxproj_file; do
             if grep -q "axeptio-ios-sdk" "$pbxproj_file"; then
               echo "📝 Updating $pbxproj_file..."
-              echo "Current minimumVersion:"
-              grep -n "minimumVersion.*[0-9]\+\.[0-9]\+\.[0-9]\+" "$pbxproj_file" | grep -A5 -B5 "axeptio-ios-sdk" || echo "No minimumVersion found"
+              echo "Current axeptio-ios-sdk minimumVersion:"
+              grep -A10 -B2 "axeptio-ios-sdk" "$pbxproj_file" | grep -A10 -B2 "minimumVersion" || echo "No minimumVersion found for axeptio-ios-sdk"
               
-              # Update minimumVersion for axeptio-ios-sdk package
-              sed -i.bak "s/\(minimumVersion = \)[0-9]\+\.[0-9]\+\.[0-9]\+\(.*axeptio-ios-sdk\|.*\n.*axeptio-ios-sdk\)/\1$IOS_VERSION\2/" "$pbxproj_file"
+              # Create a temporary file to process the pbxproj more carefully
+              awk '
+                /repositoryURL.*axeptio-ios-sdk/ { in_axeptio_block = 1 }
+                in_axeptio_block && /minimumVersion = [0-9]+\.[0-9]+\.[0-9]+;/ {
+                  gsub(/minimumVersion = [0-9]+\.[0-9]+\.[0-9]+;/, "minimumVersion = '"$IOS_VERSION"';")
+                  in_axeptio_block = 0
+                }
+                /};$/ && in_axeptio_block { in_axeptio_block = 0 }
+                { print }
+              ' "$pbxproj_file" > "${pbxproj_file}.tmp"
               
-              # Alternative pattern in case the structure is different
-              sed -i.bak "s/\(minimumVersion = \)[0-9]\+\.[0-9]\+\.[0-9]\+;/\1$IOS_VERSION;/g" "$pbxproj_file"
+              # Check if changes were made
+              if ! diff -q "$pbxproj_file" "${pbxproj_file}.tmp" > /dev/null; then
+                mv "${pbxproj_file}.tmp" "$pbxproj_file"
+                echo "✅ Updated axeptio-ios-sdk minimumVersion to $IOS_VERSION"
+              else
+                rm "${pbxproj_file}.tmp"
+                echo "⚠️  No changes made - minimumVersion might already be $IOS_VERSION or pattern not found"
+              fi
               
-              echo "Updated minimumVersion:"
-              grep -n "minimumVersion.*[0-9]\+\.[0-9]\+\.[0-9]\+" "$pbxproj_file" | grep -A5 -B5 "axeptio-ios-sdk" || echo "No minimumVersion found"
-              rm "${pbxproj_file}.bak"
+              echo "Updated axeptio-ios-sdk minimumVersion:"
+              grep -A10 -B2 "axeptio-ios-sdk" "$pbxproj_file" | grep -A10 -B2 "minimumVersion" || echo "No minimumVersion found for axeptio-ios-sdk"
             else
               echo "⚠️  $pbxproj_file doesn't contain axeptio-ios-sdk reference"
             fi
@@ -321,12 +334,35 @@ jobs:
           # Update ios/axeptio_sdk.podspec
           if [ -f "ios/axeptio_sdk.podspec" ]; then
             echo "📝 Updating ios/axeptio_sdk.podspec..."
-            echo "Current content:"
-            grep -n "AxeptioSDK" ios/axeptio_sdk.podspec || echo "No AxeptioSDK found in podspec"
-            sed -i.bak "s/s.dependency 'AxeptioSDK', '~> [0-9.]*'/s.dependency 'AxeptioSDK', '~> $IOS_VERSION'/" ios/axeptio_sdk.podspec
+            echo "Current content (showing all dependency lines):"
+            grep -n "dependency" ios/axeptio_sdk.podspec || echo "No dependencies found in podspec"
+            echo "Looking for AxeptioSDK/AxeptioIOSSDK patterns:"
+            grep -n -E "(AxeptioSDK|AxeptioIOSSDK)" ios/axeptio_sdk.podspec || echo "No Axeptio dependencies found"
+            
+            # Try multiple patterns to find the iOS SDK dependency
+            if grep -q "s.dependency.*AxeptioSDK.*~>" ios/axeptio_sdk.podspec; then
+              echo "Found AxeptioSDK with ~> pattern"
+              sed -i.bak "s/s.dependency 'AxeptioSDK', '~> [0-9.]*'/s.dependency 'AxeptioSDK', '~> $IOS_VERSION'/" ios/axeptio_sdk.podspec
+            elif grep -q "s.dependency.*AxeptioIOSSDK.*~>" ios/axeptio_sdk.podspec; then
+              echo "Found AxeptioIOSSDK with ~> pattern"
+              sed -i.bak "s/s.dependency 'AxeptioIOSSDK', '~> [0-9.]*'/s.dependency 'AxeptioIOSSDK', '~> $IOS_VERSION'/" ios/axeptio_sdk.podspec
+            elif grep -q "s.dependency.*AxeptioSDK" ios/axeptio_sdk.podspec; then
+              echo "Found AxeptioSDK with exact version pattern"
+              sed -i.bak "s/s.dependency 'AxeptioSDK', '[0-9.]*'/s.dependency 'AxeptioSDK', '$IOS_VERSION'/" ios/axeptio_sdk.podspec
+            elif grep -q "s.dependency.*AxeptioIOSSDK" ios/axeptio_sdk.podspec; then
+              echo "Found AxeptioIOSSDK with exact version pattern"
+              sed -i.bak "s/s.dependency 'AxeptioIOSSDK', '[0-9.]*'/s.dependency 'AxeptioIOSSDK', '$IOS_VERSION'/" ios/axeptio_sdk.podspec
+            else
+              echo "⚠️  No recognizable Axeptio iOS SDK dependency pattern found in podspec"
+              echo "Full podspec content:"
+              cat ios/axeptio_sdk.podspec
+            fi
+            
             echo "Updated content:"
-            grep -n "AxeptioSDK" ios/axeptio_sdk.podspec || echo "No AxeptioSDK found in podspec"
-            rm ios/axeptio_sdk.podspec.bak
+            grep -n -E "(dependency|AxeptioSDK|AxeptioIOSSDK)" ios/axeptio_sdk.podspec || echo "No dependencies found"
+            
+            # Clean up backup file if it exists
+            [ -f ios/axeptio_sdk.podspec.bak ] && rm ios/axeptio_sdk.podspec.bak
           else
             echo "⚠️  ios/axeptio_sdk.podspec not found"
           fi
