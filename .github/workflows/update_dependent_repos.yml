@@ -21,17 +21,32 @@ permissions:
   contents: write
   pull-requests: write
 
+
 jobs:
   get_version:
     if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.set_version.outputs.version }}
+      has_token: ${{ steps.check_token.outputs.has_token }}
     steps:
       - uses: actions/checkout@v4
         if: github.event_name != 'workflow_dispatch'
         with:
           fetch-depth: 0
+      
+      - name: Check token availability
+        id: check_token
+        env:
+          GH_TOKEN_DEPENDENCY_ONLY_IOS: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
+        run: |
+          if [ -n "$GH_TOKEN_DEPENDENCY_ONLY_IOS" ]; then
+            echo "has_token=true" >> "$GITHUB_OUTPUT"
+            echo "🔐 GH_TOKEN_DEPENDENCY_ONLY_IOS: [REDACTED] ($(echo -n "$GH_TOKEN_DEPENDENCY_ONLY_IOS" | shasum -a 256 | cut -d' ' -f1))"
+          else
+            echo "has_token=false" >> "$GITHUB_OUTPUT"
+            echo "⚠️  GH_TOKEN_DEPENDENCY_ONLY_IOS: Not configured"
+          fi
       
       - name: Set version
         id: set_version
@@ -46,20 +61,14 @@ jobs:
           
   update_sample_app:
     needs: get_version
+    if: needs.get_version.outputs.has_token == 'true'
     runs-on: ubuntu-latest
     steps:
-      - name: Generate token
-        id: generate_token
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      
       - name: Checkout sample-app-ios
         uses: actions/checkout@v4
         with:
           repository: axeptio/sample-app-ios
-          token: ${{ steps.generate_token.outputs.token }}
+          token: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           
       - name: Create branch and update version
         env:
@@ -102,7 +111,7 @@ jobs:
       - name: Create Pull Request
         if: inputs.dry_run != true
         env:
-          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
         run: |
           BODY="This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
@@ -121,20 +130,14 @@ jobs:
 
   update_flutter_sdk:
     needs: get_version
+    if: needs.get_version.outputs.has_token == 'true'
     runs-on: ubuntu-latest
     steps:
-      - name: Generate token
-        id: generate_token
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      
       - name: Checkout flutter-sdk
         uses: actions/checkout@v4
         with:
           repository: axeptio/axeptio-flutter-sdk
-          token: ${{ steps.generate_token.outputs.token }}
+          token: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           
       - name: Create branch and update version
         env:
@@ -171,7 +174,7 @@ jobs:
       - name: Create Pull Request
         if: inputs.dry_run != true
         env:
-          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
         run: |
           BODY="This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
@@ -190,20 +193,14 @@ jobs:
 
   update_react_native_sdk:
     needs: get_version
+    if: needs.get_version.outputs.has_token == 'true'
     runs-on: ubuntu-latest
     steps:
-      - name: Generate token
-        id: generate_token
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      
       - name: Checkout react-native-sdk
         uses: actions/checkout@v4
         with:
           repository: axeptio/react-native-axeptio-sdk
-          token: ${{ steps.generate_token.outputs.token }}
+          token: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           
       - name: Create branch and update version
         env:
@@ -228,6 +225,12 @@ jobs:
             rm ios/AxeptioSDK.podspec.bak
           fi
           
+          # Check if there are any changes to commit
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes detected. Version might already be up to date."
+            exit 0
+          fi
+          
           git add -A
           git commit -m "Update iOS SDK to version $IOS_VERSION"
           
@@ -240,7 +243,7 @@ jobs:
       - name: Create Pull Request
         if: inputs.dry_run != true
         env:
-          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN_DEPENDENCY_ONLY_IOS }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
         run: |
           BODY="This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
@@ -256,3 +259,23 @@ jobs:
             --body "$BODY" \
             --base master \
             --head "update-ios-sdk-$IOS_VERSION"
+  notify_missing_credentials:
+    needs: get_version
+    if: needs.get_version.outputs.has_token == 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify about missing credentials
+        run: |
+          echo "⚠️  WARNING: GH_TOKEN_DEPENDENCY_ONLY_IOS is not configured"
+          echo ""
+          echo "The update_dependent_repos workflow requires a GitHub token with appropriate permissions to create PRs in other repositories."
+          echo ""
+          echo "To enable automatic updates of dependent repositories, please configure this secret:"
+          echo "  - GH_TOKEN_DEPENDENCY_ONLY_IOS: GitHub token with 'Contents: Write' and 'Pull requests: Write' permissions"
+          echo ""
+          echo "Without this token, the workflow cannot:"
+          echo "  - Update axeptio/sample-app-ios"
+          echo "  - Update axeptio/axeptio-flutter-sdk"
+          echo "  - Update axeptio/react-native-axeptio-sdk"
+          echo ""
+          echo "iOS SDK version that would have been used: ${{ needs.get_version.outputs.version }}"
