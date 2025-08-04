@@ -13,6 +13,11 @@ on:
         required: false
         default: false
         type: boolean
+      force_republish:
+        description: 'Force republish even if version already exists (requires pod trunk push --overwrite)'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -37,16 +42,44 @@ jobs:
           LIB_VERSION: ${{ steps.tag.outputs.LAST_VERSION }}
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
           DRY_RUN: ${{ inputs.dry_run }}
+          FORCE_REPUBLISH: ${{ inputs.force_republish }}
         run: |
           echo "Git tag version: $LIB_VERSION"
+          
+          # Check if version already exists on CocoaPods
+          echo "Checking if version $LIB_VERSION already exists on CocoaPods..."
+          EXISTING_VERSIONS=$(pod trunk info AxeptioIOSSDK | grep -E "^ *- [0-9]+\.[0-9]+\.[0-9]+" | awk '{print $2}')
+          
+          if echo "$EXISTING_VERSIONS" | grep -q "^${LIB_VERSION}$"; then
+            if [ "$FORCE_REPUBLISH" = "true" ]; then
+              echo "⚠️  Version $LIB_VERSION already exists on CocoaPods, but force_republish is enabled."
+            else
+              echo "✅ Version $LIB_VERSION already exists on CocoaPods. Skipping publish."
+              echo "💡 To force republish, run with force_republish=true"
+              exit 0
+            fi
+          fi
+          
+          echo "Version $LIB_VERSION not found on CocoaPods. Proceeding with validation and publish..."
+          
           pod lib lint --allow-warnings
+          
           if [ "$DRY_RUN" = "true" ]; then
             echo "=== DRY-RUN MODE ==="
-            echo "Current published version on CocoaPods:"
-            pod trunk info AxeptioIOSSDK | grep -E "^ *- [0-9]+\.[0-9]+\.[0-9]+" | head -1 | awk '{print $2}'
+            echo "Current published versions on CocoaPods:"
+            echo "$EXISTING_VERSIONS" | head -5
             echo ""
             echo "Version to be published: $LIB_VERSION"
-            echo "Would run: pod trunk push AxeptioIOSSDK.podspec --allow-warnings"
+            if [ "$FORCE_REPUBLISH" = "true" ]; then
+              echo "Would run: pod trunk push AxeptioIOSSDK.podspec --allow-warnings --overwrite"
+            else
+              echo "Would run: pod trunk push AxeptioIOSSDK.podspec --allow-warnings"
+            fi
           else
-            pod trunk push AxeptioIOSSDK.podspec --allow-warnings
+            if [ "$FORCE_REPUBLISH" = "true" ]; then
+              echo "Force republishing with --overwrite flag..."
+              pod trunk push AxeptioIOSSDK.podspec --allow-warnings --overwrite
+            else
+              pod trunk push AxeptioIOSSDK.podspec --allow-warnings
+            fi
           fi
