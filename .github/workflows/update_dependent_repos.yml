@@ -78,9 +78,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
-          git checkout -b "$BRANCH_NAME"
-          
           # Update Podfile
           if [ -f "Podfile" ]; then
             sed -i.bak "s/pod 'AxeptioSDK', '~> [0-9.]*'/pod 'AxeptioSDK', '~> $IOS_VERSION'/" Podfile
@@ -99,6 +96,8 @@ jobs:
             exit 0
           fi
           
+          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          git checkout -b "$BRANCH_NAME"
           git add -A
           git commit -m "Update iOS SDK to version $IOS_VERSION"
           
@@ -147,9 +146,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
-          git checkout -b "$BRANCH_NAME"
-          
           # Update ios/axeptio_sdk.podspec
           if [ -f "ios/axeptio_sdk.podspec" ]; then
             sed -i.bak "s/s.dependency 'AxeptioSDK', '~> [0-9.]*'/s.dependency 'AxeptioSDK', '~> $IOS_VERSION'/" ios/axeptio_sdk.podspec
@@ -162,6 +158,8 @@ jobs:
             exit 0
           fi
           
+          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          git checkout -b "$BRANCH_NAME"
           git add -A
           git commit -m "Update iOS SDK to version $IOS_VERSION"
           
@@ -210,9 +208,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
-          git checkout -b "$BRANCH_NAME"
-          
           # Update react-native-axeptio-sdk.podspec
           if [ -f "react-native-axeptio-sdk.podspec" ]; then
             sed -i.bak "s/s.dependency \"AxeptioSDK\", \"~> [0-9.]*\"/s.dependency \"AxeptioSDK\", \"~> $IOS_VERSION\"/" react-native-axeptio-sdk.podspec
@@ -231,6 +226,8 @@ jobs:
             exit 0
           fi
           
+          BRANCH_NAME="update-ios-sdk-$IOS_VERSION"
+          git checkout -b "$BRANCH_NAME"
           git add -A
           git commit -m "Update iOS SDK to version $IOS_VERSION"
           
