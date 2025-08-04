@@ -34,7 +34,7 @@ jobs:
         id: tag
         run: |
           git fetch --tags 
-          VERSION=`git tag | sort -V | tail -1`
+          VERSION=$(git tag | sort -V | tail -1)
           echo "$VERSION"
           echo "LAST_VERSION=$VERSION" >> "$GITHUB_OUTPUT"
       - name: Deploy to Cocoapods

@@ -99,18 +99,17 @@ jobs:
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
         run: |
+          BODY="This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+          
+          ## Changes
+          - Updated iOS SDK version in Podfile and/or Package.swift
+          
+          ## Notes
+          This PR was automatically generated when iOS SDK version $IOS_VERSION was published."
+          
           gh pr create \
             --title "Update iOS SDK to version $IOS_VERSION" \
-            --body "$(cat <<EOF
-This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
-
-## Changes
-- Updated iOS SDK version in Podfile and/or Package.swift
-
-## Notes
-This PR was automatically generated when iOS SDK version $IOS_VERSION was published.
-EOF
-)" \
+            --body "$BODY" \
             --base master \
             --head "update-ios-sdk-$IOS_VERSION"
 
@@ -163,18 +162,17 @@ EOF
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
         run: |
+          BODY="This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+          
+          ## Changes
+          - Updated iOS SDK dependency in ios/axeptio_sdk.podspec
+          
+          ## Notes
+          This PR was automatically generated when iOS SDK version $IOS_VERSION was published."
+          
           gh pr create \
             --title "Update iOS SDK to version $IOS_VERSION" \
-            --body "$(cat <<EOF
-This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
-
-## Changes
-- Updated iOS SDK dependency in ios/axeptio_sdk.podspec
-
-## Notes
-This PR was automatically generated when iOS SDK version $IOS_VERSION was published.
-EOF
-)" \
+            --body "$BODY" \
             --base master \
             --head "update-ios-sdk-$IOS_VERSION"
 
@@ -233,17 +231,16 @@ EOF
           GH_TOKEN: ${{ steps.generate_token.outputs.token }}
           IOS_VERSION: ${{ needs.get_version.outputs.version }}
         run: |
+          BODY="This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
+          
+          ## Changes
+          - Updated iOS SDK dependency in podspec file
+          
+          ## Notes
+          This PR was automatically generated when iOS SDK version $IOS_VERSION was published."
+          
           gh pr create \
             --title "Update iOS SDK to version $IOS_VERSION" \
-            --body "$(cat <<EOF
-This PR updates the Axeptio iOS SDK to version $IOS_VERSION.
-
-## Changes
-- Updated iOS SDK dependency in podspec file
-
-## Notes
-This PR was automatically generated when iOS SDK version $IOS_VERSION was published.
-EOF
-)" \
+            --body "$BODY" \
             --base master \
             --head "update-ios-sdk-$IOS_VERSION"
