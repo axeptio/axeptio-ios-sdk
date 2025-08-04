@@ -6,10 +6,17 @@ on:
       - master
     types:
       - closed
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Run in dry-run mode (skip actual pod trunk push)'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   if_merged:
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,7 +33,17 @@ jobs:
         env:
           LIB_VERSION: ${{ steps.tag.outputs.LAST_VERSION }}
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
         run: |
-          echo $LIB_VERSION
+          echo "Git tag version: $LIB_VERSION"
           pod lib lint --allow-warnings
-          pod trunk push AxeptioIOSSDK.podspec --allow-warnings
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "=== DRY-RUN MODE ==="
+            echo "Current published version on CocoaPods:"
+            pod trunk info AxeptioIOSSDK | grep -E "^\s+- [0-9]+\.[0-9]+\.[0-9]+" | head -1 | awk '{print $2}'
+            echo ""
+            echo "Version to be published: $LIB_VERSION"
+            echo "Would run: pod trunk push AxeptioIOSSDK.podspec --allow-warnings"
+          else
+            pod trunk push AxeptioIOSSDK.podspec --allow-warnings
+          fi
