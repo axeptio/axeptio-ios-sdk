@@ -302,6 +302,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 enum AxeptioService : NSInteger;
 @class NSURL;
 @class AxeptioEventListener;
+@class NSDictionary;
 
 SWIFT_CLASS("_TtC10AxeptioSDK7Axeptio")
 @interface Axeptio : NSObject
@@ -320,6 +321,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 - (void)setEventListener:(AxeptioEventListener * _Nonnull)listener;
 - (void)removeEventListener:(AxeptioEventListener * _Nonnull)listener;
 - (void)allowPopupDisplayWithRejectedDeviceTrackingPermissions:(BOOL)allow;
+- (NSDictionary * _Nonnull)getConsentDebugInfoWithPreferenceKey:(NSString * _Nullable)preferenceKey SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
