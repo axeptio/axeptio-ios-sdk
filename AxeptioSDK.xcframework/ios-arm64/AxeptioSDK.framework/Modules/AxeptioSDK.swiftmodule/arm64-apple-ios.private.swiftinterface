@@ -28,6 +28,7 @@ import _SwiftConcurrencyShims
   @objc final public func setEventListener(_ listener: AxeptioSDK.AxeptioEventListener)
   @objc final public func removeEventListener(_ listener: AxeptioSDK.AxeptioEventListener)
   @objc final public func allowPopupDisplayWithRejectedDeviceTrackingPermissions(_ allow: Swift.Bool)
+  final public func getConsentDebugInfo(preferenceKey: Swift.String? = nil) -> [Swift.String : Any?]
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class GoogleConsentV2 : ObjectiveC.NSObject, Swift.Decodable {
