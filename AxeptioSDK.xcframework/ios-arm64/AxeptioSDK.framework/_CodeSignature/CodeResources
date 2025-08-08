@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		++YBffuBjAqAiiL/mzuC3wvTwss=
+		cXFfzkTdu9+fQkVrRPciocQzdck=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sNe37iU1GM2x/g7Wf2XSCiZQbew=
+		Z0CLT53U0pRhZpfwhYnRjdOVSUY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,7 +69,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Fms0N4kxHD3VM20INB0n8/jG1CfefVbWuZW5rOOSbQ=
+			71qb24U/eWbNQ/+hB/12numjMS1CdmPRTratZa5E4Q0=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dzxq+E4Qak6/E6bKxbRfrcS5whQh6v4oiMddy6nGafQ=
+			s+po3F9MWOPRDLJC3+i5sSOAt+/VesA1TilV/9Pq5SQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
