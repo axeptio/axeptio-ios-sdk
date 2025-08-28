@@ -572,6 +572,138 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "getVendorConsents",
+            "printedName": "getVendorConsents()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.Int : Swift.Bool]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)getVendorConsents",
+            "mangledName": "$s10AxeptioSDK0A0C17getVendorConsentsSDySiSbGyF",
+            "moduleName": "AxeptioSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getConsentedVendors",
+            "printedName": "getConsentedVendors()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)getConsentedVendors",
+            "mangledName": "$s10AxeptioSDK0A0C19getConsentedVendorsSaySiGyF",
+            "moduleName": "AxeptioSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRefusedVendors",
+            "printedName": "getRefusedVendors()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)getRefusedVendors",
+            "mangledName": "$s10AxeptioSDK0A0C17getRefusedVendorsSaySiGyF",
+            "moduleName": "AxeptioSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isVendorConsented",
+            "printedName": "isVendorConsented(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AxeptioSDK@objc(cs)Axeptio(im)isVendorConsented:",
+            "mangledName": "$s10AxeptioSDK0A0C17isVendorConsentedySbSiF",
+            "moduleName": "AxeptioSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -1252,6 +1384,33 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "AxeptioSDK"
       },
       {
         "kind": "Import",
@@ -2925,6 +3084,62 @@
       "value": "\"AxeptioSDK.GoogleConsentV2\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/ParsedVendorConsentData.swift",
+      "kind": "Dictionary",
+      "offset": 484,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/ParsedVendorConsentData.swift",
+      "kind": "Dictionary",
+      "offset": 538,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/ParsedVendorConsentData.swift",
+      "kind": "Array",
+      "offset": 577,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/ParsedVendorConsentData.swift",
+      "kind": "Array",
+      "offset": 613,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/ParsedVendorConsentData.swift",
+      "kind": "Array",
+      "offset": 669,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/ParsedVendorConsentData.swift",
+      "kind": "Array",
+      "offset": 723,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/TCFVendorConsentParser.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 16,
+      "value": "\"io.axeptio.sdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/TCFVendorConsentParser.swift",
+      "kind": "StringLiteral",
+      "offset": 306,
+      "length": 24,
+      "value": "\"TCFVendorConsentParser\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/Model\/CookiesEvent.swift",
       "kind": "StringLiteral",
       "offset": 308,
@@ -3403,56 +3618,56 @@
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1562,
+      "offset": 1772,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1707,
+      "offset": 1917,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1743,
+      "offset": 1953,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1831,
+      "offset": 2041,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1942,
+      "offset": 2152,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2179,
+      "offset": 2389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2491,
+      "offset": 2701,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/axeptio-ios-sdk-sources\/axeptio-ios-sdk-sources\/AxeptioSDK\/AxeptioSDK\/Internal\/AxeptioViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4298,
+      "offset": 4508,
       "length": 5,
       "value": "false"
     },
