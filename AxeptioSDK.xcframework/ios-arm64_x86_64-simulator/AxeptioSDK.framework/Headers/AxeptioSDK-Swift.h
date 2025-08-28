@@ -277,6 +277,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -322,6 +323,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 - (void)removeEventListener:(AxeptioEventListener * _Nonnull)listener;
 - (void)allowPopupDisplayWithRejectedDeviceTrackingPermissions:(BOOL)allow;
 - (NSDictionary * _Nonnull)getConsentDebugInfoWithPreferenceKey:(NSString * _Nullable)preferenceKey SWIFT_WARN_UNUSED_RESULT;
+/// Get all vendor consents as a dictionary of vendor ID to consent status
+///
+/// returns:
+/// Dictionary where key is vendor ID and value is consent status (true = consented, false = refused)
+- (NSDictionary<NSNumber *, NSNumber *> * _Nonnull)getVendorConsents SWIFT_WARN_UNUSED_RESULT;
+/// Get list of vendor IDs that have been consented to
+///
+/// returns:
+/// Array of vendor IDs with consent granted
+- (NSArray<NSNumber *> * _Nonnull)getConsentedVendors SWIFT_WARN_UNUSED_RESULT;
+/// Get list of vendor IDs that have been refused consent
+///
+/// returns:
+/// Array of vendor IDs with consent denied
+- (NSArray<NSNumber *> * _Nonnull)getRefusedVendors SWIFT_WARN_UNUSED_RESULT;
+/// Check if a specific vendor has consent
+/// \param vendorId The vendor ID to check
+///
+///
+/// returns:
+/// true if vendor has consent, false otherwise
+- (BOOL)isVendorConsented:(NSInteger)vendorId SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -654,6 +677,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -699,6 +723,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Axeptio * _N
 - (void)removeEventListener:(AxeptioEventListener * _Nonnull)listener;
 - (void)allowPopupDisplayWithRejectedDeviceTrackingPermissions:(BOOL)allow;
 - (NSDictionary * _Nonnull)getConsentDebugInfoWithPreferenceKey:(NSString * _Nullable)preferenceKey SWIFT_WARN_UNUSED_RESULT;
+/// Get all vendor consents as a dictionary of vendor ID to consent status
+///
+/// returns:
+/// Dictionary where key is vendor ID and value is consent status (true = consented, false = refused)
+- (NSDictionary<NSNumber *, NSNumber *> * _Nonnull)getVendorConsents SWIFT_WARN_UNUSED_RESULT;
+/// Get list of vendor IDs that have been consented to
+///
+/// returns:
+/// Array of vendor IDs with consent granted
+- (NSArray<NSNumber *> * _Nonnull)getConsentedVendors SWIFT_WARN_UNUSED_RESULT;
+/// Get list of vendor IDs that have been refused consent
+///
+/// returns:
+/// Array of vendor IDs with consent denied
+- (NSArray<NSNumber *> * _Nonnull)getRefusedVendors SWIFT_WARN_UNUSED_RESULT;
+/// Check if a specific vendor has consent
+/// \param vendorId The vendor ID to check
+///
+///
+/// returns:
+/// true if vendor has consent, false otherwise
+- (BOOL)isVendorConsented:(NSInteger)vendorId SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
