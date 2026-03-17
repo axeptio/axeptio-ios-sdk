@@ -7,7 +7,7 @@
 
 The Axeptio SDK for iOS allows applications to seamlessly ask for and collect user consent for data processing in compliance with privacy regulations.
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Supported Standards](#supported-standards)
 2. [Implementation](#implementation)
 3. [Features](#features)
@@ -20,7 +20,7 @@ The **Axeptio CMP SDK for iOS** supports the following consent management framew
 * IAB TCF v2 (Transparency and Consent Framework)
 * Google Consent Mode v2
 <br><br><br>
-## 🚀Implementation
+## Implementation
 
 For detailed instructions on how to implement and configure the Axeptio SDK in your iOS application, please refer to the official [SDK implementation guide](https://github.com/axeptio/sample-app-ios).
 <br><br><br>
@@ -33,5 +33,5 @@ For detailed instructions on how to implement and configure the Axeptio SDK in y
 
 - Fully customizable to meet specific application requirements.
 <br><br><br>
-## ⚖License
+## License
 The **Axeptio SDK** is available under the **MIT License**. For more details, please refer to the [License](https://github.com/axeptio/axeptio-ios-sdk/blob/Update-READme/LICENSE) file.
