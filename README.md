@@ -10,8 +10,9 @@ The Axeptio SDK for iOS allows applications to seamlessly ask for and collect us
 ## Table of Contents
 1. [Supported Standards](#supported-standards)
 2. [Implementation](#implementation)
-3. [Features](#features)
-4. [License](#license)
+3. [Migration Guide](#migration-guide)
+4. [Features](#features)
+5. [License](#license)
 <br><br><br>
 ## Supported Standards
 The **Axeptio CMP SDK for iOS** supports the following consent management frameworks and standards:
@@ -23,6 +24,53 @@ The **Axeptio CMP SDK for iOS** supports the following consent management framew
 ## Implementation
 
 For detailed instructions on how to implement and configure the Axeptio SDK in your iOS application, please refer to the official [SDK implementation guide](https://github.com/axeptio/sample-app-ios).
+<br><br><br>
+## Migration Guide
+
+### 2.0.x → 2.1.x
+
+**SDK minimum deployment target remains iOS 15.** If you received a linker error after upgrading, the cause is an API change — not an iOS version requirement.
+
+#### Breaking change: `widgetType` is now a required parameter in `initialize()`
+
+The `initialize()` method signature changed in 2.1.0. The `widgetType` parameter is now required with no default value.
+
+**Before (2.0.x):**
+
+```swift
+Axeptio.shared.initialize(
+    targetService: .brands,
+    clientId: "your-client-id",
+    cookiesVersion: "your-cookies-version"
+)
+```
+
+**After (2.1.x):**
+
+```swift
+Axeptio.shared.initialize(
+    targetService: .brands,
+    clientId: "your-client-id",
+    cookiesVersion: "your-cookies-version",
+    widgetType: .production   // ← add this
+)
+```
+
+Use `.production` for live apps, `.staging` for testing against your staging environment.
+
+Optional settings (token, PR targeting, cookie duration) are now configured via a separate `configure()` call:
+
+```swift
+// Optional — call before initialize() if needed
+Axeptio.shared.configure(
+    token: nil,
+    widgetPR: nil,
+    cookiesDurationDays: 190,
+    shouldUpdateCookiesDuration: false
+)
+```
+
+> **Note:** Changing the Xcode deployment target to iOS 18 is **not** the fix. The SDK supports iOS 15+. The fix is adding `widgetType: .production` to your `initialize()` call.
 <br><br><br>
 ## Features
 - Easy integration with your iOS application.
