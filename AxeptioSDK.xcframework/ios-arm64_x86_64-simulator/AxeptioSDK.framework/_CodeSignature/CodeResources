@@ -4,57 +4,53 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/Axeptio.h</key>
-		<data>
-		L/LhFrOwbxzgaCVDG3xwDdNrD68=
-		</data>
 		<key>Headers/AxeptioSDK-Swift.h</key>
 		<data>
-		YrEsetvfLKS/llA9Qgs1Sv+lv7c=
+		8KL2HfHw3YG3XIk75TGWPt9V22U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ORz7+DtgngMGPFRgSf7sO3uTLtk=
+		nGOSPHoqfdCwxgdBCGPmt8NIews=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		RrleEItnRg2LRm2VMsJhgDJ2PKI=
+		sEEdti66KbcNT9UnYV5x88FtDBE=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qkuDxjjQ2TS/gdtWl9HCFBySbaE=
+		CFsH/Z91PHeh0LIux3XZMwS2mxE=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0ppIF0Ujw0K8eHiC9P2zXDn/DUg=
+		4Yu75AvH1U8HULRoYehlYi1fEIo=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qkuDxjjQ2TS/gdtWl9HCFBySbaE=
+		CFsH/Z91PHeh0LIux3XZMwS2mxE=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Pu3V1bPg9DiIuAHqpgqKecA9giM=
+		BNYnGaLMV+P2Tf4JoldBpaRuLbY=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		RrleEItnRg2LRm2VMsJhgDJ2PKI=
+		sEEdti66KbcNT9UnYV5x88FtDBE=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wOosidC4UwoPlWJvzmq4Unbr6aQ=
+		sji6kHJDnTErUqGXeoun7OmBnJk=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ww09XOTktRM6OeKie2tUcbuZgxA=
+		ZWV//1rD1h62cwWiX56z3XS5GWs=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wOosidC4UwoPlWJvzmq4Unbr6aQ=
+		sji6kHJDnTErUqGXeoun7OmBnJk=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ibEtyEmJiNUGjcf8LJXoQPi0B14=
+		pv8g6WfjO6WuLzg1D64ifbAL4MM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,88 +67,81 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/Axeptio.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5I6puF/jScRjqGoN1X75YfTANydMnDrnvlMtH87X2yE=
-			</data>
-		</dict>
 		<key>Headers/AxeptioSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cIh+dlHs358KBK3ryTS77gjBgU2MIUi6/oQXWJ2M5IU=
+			kRWWFL47MwywFvHVl3WAEcDQXU2fvwQbE1wp4zhkcr4=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x8eN1w7ivYMbFEoPbayKooSU84mCXTOZcPsRU5o0sCk=
+			FRbOWqlx/tuO9wqqNvf0qM9pelEGp2+e1zkQTKQOc5g=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zUSj5Bioto80FJDZQV8EE/ZTYHcCN+SezOdepZ4tN4M=
+			fjOGQTXJYO3XB6yDsGAgO4Md0BNMNHCAksy590Xw2Zc=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aJCmZi2inHezqICYfr2dlZBqEM51E2jkrhKTRxqCMqE=
+			Oi4Ms2cK+BlOGPFsTRIPG7lJLuIaUFA8XI/66g9KjWM=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zUSj5Bioto80FJDZQV8EE/ZTYHcCN+SezOdepZ4tN4M=
+			fjOGQTXJYO3XB6yDsGAgO4Md0BNMNHCAksy590Xw2Zc=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0TFF2fzEZ8yuBZx2QUGr9p9w6zoOfA7v75rtg8S2/4w=
+			QdsmGsFNEGMz54Fwg+s3VguOQvpG3XpsPaijf99CuRI=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x8eN1w7ivYMbFEoPbayKooSU84mCXTOZcPsRU5o0sCk=
+			FRbOWqlx/tuO9wqqNvf0qM9pelEGp2+e1zkQTKQOc5g=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			luhCW/m/DieiczGFGco7FGO04qr4eg8MIPRzCYBV1qI=
+			fMS7v9GOypP7pxqmfJ7IrX0aR7mTocVRb0f1FfvQkXI=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XZTz1MdjiXmA5kyBnTIgiPAPForMgfaV92sA4AK2eUY=
+			rL4kYL8yQQXFKnX/FBJIhrSojuZ5who+0EEnShSyfFk=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			luhCW/m/DieiczGFGco7FGO04qr4eg8MIPRzCYBV1qI=
+			fMS7v9GOypP7pxqmfJ7IrX0aR7mTocVRb0f1FfvQkXI=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pkJEeTT6PAOvcwHDu0ZNfGPo0tTinGYDcPrFfKV/tJI=
+			iUsJNjHMRUbib0u0UAptx4RiNgWQ8mbF/wQXvetwIYk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
