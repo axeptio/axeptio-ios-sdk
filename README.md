@@ -3,7 +3,18 @@
 # Axeptio SDK
 
 
-![License](https://img.shields.io/badge/license-Apache%202.0-blue) ![iOS version >= 15](https://img.shields.io/badge/iOS%20version-%3E%3D%2015-green) ![Platform](https://img.shields.io/badge/platform-iOS-blue) ![GitHub Stars](https://img.shields.io/github/stars/axeptio/sample-app-ios?style=social) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+![License](https://img.shields.io/badge/license-Apache%202.0-blue) ![iOS version >= 15](https://img.shields.io/badge/iOS%20version-%3E%3D%2015-green) ![Platform](https://img.shields.io/badge/platform-iOS-blue) [![Axeptio SDK Version](https://img.shields.io/github/v/release/axeptio/axeptio-ios-sdk)](https://github.com/axeptio/axeptio-ios-sdk/releases) [![Swift Integration](https://img.shields.io/badge/Integration-Swift%20%26%20SwiftUI-orange)](https://github.com/axeptio/sample-app-ios) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+
+> **Beta Available: 2.2.0-beta.1**
+>
+> Version **2.2.0-beta.1** is available for testing. This release includes a **breaking change**:
+>
+> **Objective-C support has been dropped.** The SDK is now Swift-only.
+>
+> New features include SwiftUI integration layer (View modifier & ObservableObject wrapper),
+> web widget error recovery, consent event deduplication, and WebView stability improvements.
+>
+> See the full [release notes](https://github.com/axeptio/axeptio-ios-sdk/releases/tag/2.2.0-beta.1) for details.
 
 The Axeptio SDK for iOS allows applications to seamlessly ask for and collect user consent for data processing in compliance with privacy regulations.
 
