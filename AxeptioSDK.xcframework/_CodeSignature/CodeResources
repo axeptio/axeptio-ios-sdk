@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AxeptioSDK.framework/AxeptioSDK</key>
 		<data>
-		8qmU+4Tb7JdZ1ijMmuF6uAIlRVY=
+		h6u83kuxYRxrn9DqeZOqT3Yxkxo=
 		</data>
 		<key>ios-arm64/AxeptioSDK.framework/Headers/AxeptioSDK-Swift.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/AxeptioSDK.framework.dSYM/Contents/Resources/DWARF/AxeptioSDK</key>
 		<data>
-		CSTJ+iEtst9CCn3ERHS1R1wZUn0=
+		UKrAOdyOfzxhH91LvCJOq3q3wYU=
 		</data>
 		<key>ios-arm64/dSYMs/AxeptioSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/AxeptioSDK.yml</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/AxeptioSDK.framework.dSYM/Contents/Resources/DWARF/AxeptioSDK</key>
 		<data>
-		4tTdbjBMs6zaKLLvL8RI24jh8fE=
+		vJLJiYqWvqyhAZhPPT8NxRKabdw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/dSYMs/AxeptioSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/AxeptioSDK.yml</key>
 		<data>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8qmU+4Tb7JdZ1ijMmuF6uAIlRVY=
+			h6u83kuxYRxrn9DqeZOqT3Yxkxo=
 			</data>
 			<key>hash2</key>
 			<data>
-			uZABcooZjLhNJ4L0OHxiC+ML19D+Pa7rs1cO3XxK5Ns=
+			ihxfG8MnH7FUV6rKLuZ06BJQomSMTNvw8v6XxD9Sy3k=
 			</data>
 		</dict>
 		<key>ios-arm64/AxeptioSDK.framework/Headers/AxeptioSDK-Swift.h</key>
@@ -275,11 +275,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CSTJ+iEtst9CCn3ERHS1R1wZUn0=
+			UKrAOdyOfzxhH91LvCJOq3q3wYU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xi851gvoXcyWCmjCKxoNcjwLrtpBpRy7t+Cqg9XBGqg=
+			G05/qbjWtLHzSP58cOkKdPLbLkTG5XLkQhKMdV29stw=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/AxeptioSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/AxeptioSDK.yml</key>
@@ -473,11 +473,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4tTdbjBMs6zaKLLvL8RI24jh8fE=
+			vJLJiYqWvqyhAZhPPT8NxRKabdw=
 			</data>
 			<key>hash2</key>
 			<data>
-			UQEVv6JETs8epOPwhjhOw7j3+UOpdMXo6E/megQlt5c=
+			Sg7wzNrrHj3HZ+1DWWK3rvjMJkeGu0uxgjpWNC6Anxo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/dSYMs/AxeptioSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/AxeptioSDK.yml</key>
