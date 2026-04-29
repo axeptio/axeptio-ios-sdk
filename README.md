@@ -5,16 +5,33 @@
 
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue) ![iOS version >= 15](https://img.shields.io/badge/iOS%20version-%3E%3D%2015-green) ![Platform](https://img.shields.io/badge/platform-iOS-blue) [![Axeptio SDK Version](https://img.shields.io/github/v/release/axeptio/axeptio-ios-sdk)](https://github.com/axeptio/axeptio-ios-sdk/releases) [![Swift Integration](https://img.shields.io/badge/Integration-Swift%20%26%20SwiftUI-orange)](https://github.com/axeptio/sample-app-ios) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 
-> **Beta Available: 2.2.0-beta.1**
+> **2.2.0 is out** — includes a **breaking change**: Objective-C support has been dropped.
+> The SDK is now Swift-only. See the [2.2.0 release notes](https://github.com/axeptio/axeptio-ios-sdk/releases/tag/2.2.0).
+
+> **⚠️ CocoaPods sunset notice**
 >
-> Version **2.2.0-beta.1** is available for testing. This release includes a **breaking change**:
+> The CocoaPods Specs Repo (trunk) [goes read-only on **2026-12-02**](https://blog.cocoapods.org/CocoaPods-Specs-Repo/).
+> After that date, no new versions of the Axeptio SDK can be published to the trunk.
 >
-> **Objective-C support has been dropped.** The SDK is now Swift-only.
+> **Versions up to and including the last one published before that date will remain installable** —
+> existing `pod 'AxeptioIOSSDK', '~> 2.2'` integrations keep working.
 >
-> New features include SwiftUI integration layer (View modifier & ObservableObject wrapper),
-> web widget error recovery, consent event deduplication, and WebView stability improvements.
+> **For new versions after Dec 2026**, use one of:
 >
-> See the full [release notes](https://github.com/axeptio/axeptio-ios-sdk/releases/tag/2.2.0-beta.1) for details.
+> 1. **Switch to Swift Package Manager** (recommended — already supported):
+>    ```swift
+>    .package(url: "https://github.com/axeptio/axeptio-ios-sdk.git", from: "2.2.0")
+>    ```
+>
+> 2. **Pin a specific tag in your `Podfile`** (no Specs Repo needed):
+>    ```ruby
+>    pod 'AxeptioIOSSDK',
+>      :git => 'https://github.com/axeptio/axeptio-ios-sdk.git',
+>      :tag => '2.2.0'
+>    ```
+>    You'll need to bump `:tag` manually for each release. Loses `pod search` and `~>` semver matching.
+>
+> We recommend planning the SPM migration well before the deadline.
 
 The Axeptio SDK for iOS allows applications to seamlessly ask for and collect user consent for data processing in compliance with privacy regulations.
 
