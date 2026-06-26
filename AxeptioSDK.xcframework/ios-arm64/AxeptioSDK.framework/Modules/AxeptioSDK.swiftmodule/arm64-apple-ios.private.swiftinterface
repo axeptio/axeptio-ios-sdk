@@ -6,6 +6,7 @@ import Combine
 import Foundation
 import Network
 import OSLog
+import ObjectiveC
 import Swift
 import SwiftUI
 import UIKit
@@ -44,8 +45,8 @@ import _SwiftConcurrencyShims
   public var adStorage: AxeptioSDK.GoogleConsentStatus
   public var adUserData: AxeptioSDK.GoogleConsentStatus
   public var adPersonalization: AxeptioSDK.GoogleConsentStatus
-  @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
 }
 public enum AxeptioService : Swift.Int {
   case brands, publisherTcf
