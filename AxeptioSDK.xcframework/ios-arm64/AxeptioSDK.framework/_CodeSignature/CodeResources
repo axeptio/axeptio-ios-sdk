@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PbFTPP0GveBo1PAcOWObLI0Ba78=
+		31yv1XYbgbHVeGZG+wYAAeVaYbo=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		afm7/+zvSie5gO7pVf94HJ9TOqM=
+		Q4PVqMfMp3OfaHo08MzJEyzWjgk=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		hS5YJLCFb+eeaPV9Yv274Sjg9M8=
+		+hW8D2zPE52H7jzbkXLOux+QDug=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		iYGLyliURDW1riPODBRkIdqF5lk=
+		nMgjWgIj+1mkSW9g+6JDpuhOf14=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		hS5YJLCFb+eeaPV9Yv274Sjg9M8=
+		+hW8D2zPE52H7jzbkXLOux+QDug=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+X41APMmQDLnMOJkVRM9lnJlCcI=
+		X8HHjsXNglD5UWIWMC8a4qr1Agg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,35 +58,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gC9/0YBTX+d5YzpVv3vEms/3AJxrIEixtyg/9azsuVU=
+			DnnaRyTLrgBK88VRTuLDHTbYfrsXYwzxDgCrwhX1gcU=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gXL7HJ+2iJ/Pf190pk5X+BB2bj6H8bWywbwAtSZ+AHU=
+			++xvt8EA9GdSJZNA09Q4MlpNvavPz3BSm2wQHW1iSTo=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ziuJawl2zregwcrnlBk1n3MMR+Xqy5QniVvPd90Ql9w=
+			vYuMT2U8FdxJoLQOOspeMbzk34uBZVtIYNt+zR1y8yA=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gXL7HJ+2iJ/Pf190pk5X+BB2bj6H8bWywbwAtSZ+AHU=
+			++xvt8EA9GdSJZNA09Q4MlpNvavPz3BSm2wQHW1iSTo=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Tq7zwU2mcOVe8K0ZaPUpzDmsbfgDZv0YRnHNALWiuk4=
+			+cnX5l+pIn1DkPkDZt8Ji2Nqd1Ntq3IzZcsR3CkSvsg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
