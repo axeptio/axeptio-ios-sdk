@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/axeptio/axeptio-ios-sdk"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Axeptio" => "support@axeptio.eu" }
-  spec.source       = { :git => "https://github.com/axeptio/axeptio-ios-sdk.git", :tag => spec.version.to_s }
+  spec.source       = { :git => "https://github.com/axeptio/axeptio-ios-sdk.git", :tag => "v#{spec.version}" }
   spec.vendored_frameworks = "AxeptioSDK.xcframework"
   spec.swift_version = "5.6"
   spec.platform = :ios, "15.0"
