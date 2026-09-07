@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		31yv1XYbgbHVeGZG+wYAAeVaYbo=
+		zav1WiVCyvkIjfcuGaiU5I8htg0=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		7XrOcv8jzWWtGeD3Eqy2Mnrd+L0=
+		SC2yqbZvq7Z50BdGOsPmg/qrjmY=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+hW8D2zPE52H7jzbkXLOux+QDug=
+		O4rZGSVaiOxWmZV/LdhI/TItDHE=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		nMgjWgIj+1mkSW9g+6JDpuhOf14=
+		6hX6vr1BJBWdWrDUe3Rd/5emLkk=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+hW8D2zPE52H7jzbkXLOux+QDug=
+		O4rZGSVaiOxWmZV/LdhI/TItDHE=
 		</data>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		lOAIlnW+KsChXHZm/tHGL9CVC98=
+		Qw5SOL4PB1TWAIY86TbqjbnW+F0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,35 +58,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GDUUz6nLTL8pd1haEJ6DRjCC+tYFsV6huMy4WZ3rF4s=
+			xoILEifN9G59dCE3yuuCKLfTbzdmmZzDmtXjxN4Bj0Y=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			++xvt8EA9GdSJZNA09Q4MlpNvavPz3BSm2wQHW1iSTo=
+			f3O4WopdscLp/mKSEKMOu9OHrSQvtVSk8WnGZQiQx5s=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vYuMT2U8FdxJoLQOOspeMbzk34uBZVtIYNt+zR1y8yA=
+			lAwl08XRHUBg4vwa3HHctwYqeZOBVPJbEGjZIRC9n8g=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			++xvt8EA9GdSJZNA09Q4MlpNvavPz3BSm2wQHW1iSTo=
+			f3O4WopdscLp/mKSEKMOu9OHrSQvtVSk8WnGZQiQx5s=
 			</data>
 		</dict>
 		<key>Modules/AxeptioSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a/nL/7iyXqlLoAPYO8RB1gFDvYFiZOj/Sn+nxN7GPR8=
+			rgC+aPeFpjszIA7/zW6AFcOdR/+hPGYtko6SQ6dy5No=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

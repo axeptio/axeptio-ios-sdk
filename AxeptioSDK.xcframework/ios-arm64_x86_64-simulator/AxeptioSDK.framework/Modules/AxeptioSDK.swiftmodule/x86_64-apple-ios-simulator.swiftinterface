@@ -20,8 +20,12 @@ import _SwiftConcurrencyShims
   final public var axeptioToken: Swift.String? {
     get
   }
+  final public var servedCookiesVersion: Swift.String? {
+    get
+  }
   final public func configure(token: Swift.String? = nil, widgetPR: Swift.String? = nil, cookiesDurationDays: Swift.Int = 190, shouldUpdateCookiesDuration: Swift.Bool = false)
   final public func initialize(targetService: AxeptioSDK.AxeptioService, clientId: Swift.String, cookiesVersion: Swift.String, widgetType: AxeptioSDK.WidgetType = .production)
+  final public func setCookiesVersion(_ cookiesVersion: Swift.String)
   final public func setupUI()
   final public func setUserDeniedTracking(denied: Swift.Bool)
   final public func setDisplayPopUpOnEnterForeground(display: Swift.Bool)
@@ -75,8 +79,21 @@ final public class AxeptioEventListener {
   final public var onConsentCleared: (() -> Swift.Void)?
   final public var onGoogleConsentModeUpdate: ((AxeptioSDK.GoogleConsentV2) -> Swift.Void)?
   final public var onError: ((Swift.String) -> Swift.Void)?
+  final public var onConfigServed: ((AxeptioSDK.AxeptioServedConfig) -> Swift.Void)?
+  final public var onCookiesVersionChanged: ((Swift.String) -> Swift.Void)?
+  final public var onCMPRestored: (() -> Swift.Void)?
   public init()
   @objc deinit
+}
+public struct AxeptioServedConfig : Swift.Equatable {
+  public let requestedCookiesVersion: Swift.String
+  public let servedCookiesVersion: Swift.String
+  public let servedConfigurationId: Swift.String
+  public var isMatch: Swift.Bool {
+    get
+  }
+  public init(requestedCookiesVersion: Swift.String, servedCookiesVersion: Swift.String, servedConfigurationId: Swift.String)
+  public static func == (a: AxeptioSDK.AxeptioServedConfig, b: AxeptioSDK.AxeptioServedConfig) -> Swift.Bool
 }
 @objc public enum WidgetType : Swift.Int {
   case production = 0
@@ -125,7 +142,7 @@ extension SwiftUI.View {
   public func axeptioConsent() -> some SwiftUI.View
   
 }
-final public class AxeptioStore : Foundation.ObservableObject {
+@_hasMissingDesignatedInitializers final public class AxeptioStore : Foundation.ObservableObject {
   @Combine.Published @_projectedValueProperty($consentSaved) final public var consentSaved: Swift.Bool {
     get
   }
@@ -136,6 +153,18 @@ final public class AxeptioStore : Foundation.ObservableObject {
     get
   }
   final public var $googleConsentV2: Combine.Published<AxeptioSDK.GoogleConsentV2?>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($servedConfig) final public var servedConfig: AxeptioSDK.AxeptioServedConfig? {
+    get
+  }
+  final public var $servedConfig: Combine.Published<AxeptioSDK.AxeptioServedConfig?>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($cmpRestoredEventCount) final public var cmpRestoredEventCount: Swift.Int {
+    get
+  }
+  final public var $cmpRestoredEventCount: Combine.Published<Swift.Int>.Publisher {
     get
   }
   public init()
